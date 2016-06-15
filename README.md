@@ -2,7 +2,7 @@
 
 # Front-End Develop SCHOOL
 
-------
+
 
 [DAY 01](./DL/DAY01/README.md)
 -
