@@ -30,7 +30,7 @@ $ npm install --global http-server
 # -o 는 옵션. 기본 웹브라우저 열기(Open)
 $ http-server -o
 
-# ctrl + c 종료
+# 종료 - ctrl + c
 ```
 
 -
