@@ -76,3 +76,5 @@ ctrl + c : 종료
 - [Lorem Ipsum](https://ko.wikipedia.org/wiki/%EB%A1%9C%EB%A0%98_%EC%9E%85%EC%88%A8)
 - [한글입숨](http://hangul.thefron.me/)
 - [W3C HTML Validation Service](http://validator.w3.org/)
+- [HTML Entity Code](http://entitycode.com/)
+- [instantlogosearch](http://instantlogosearch.com/)
