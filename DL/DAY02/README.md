@@ -71,25 +71,54 @@ ctrl + c : 종료
 
 ###IE 조건부 서식
 ```
-    <!--[if IE 6]><html lang="ko-KR" class="ie6"><![endif]-->
-    <!--[if IE 7]><html lang="ko-KR" class="ie7"><![endif]-->
-    <!--[if IE 8]><html lang="ko-KR" class="ie8"><![endif]-->
-    <!--[if IE 9]><html lang="ko-KR" class="ie9"><![endif]-->
-    <!--[if !IE]><!--><html lang="ko-KR"><!--<![endif]-->
+<!--[if IE 6]><html lang="ko-KR" class="ie6"><![endif]-->
+<!--[if IE 7]><html lang="ko-KR" class="ie7"><![endif]-->
+<!--[if IE 8]><html lang="ko-KR" class="ie8"><![endif]-->
+<!--[if IE 9]><html lang="ko-KR" class="ie9"><![endif]-->
+<!--[if !IE]><!--><html lang="ko-KR"><!--<![endif]-->
 ```
 
 ### Heading 1~6
 ```
-    <h1>Heading 1<sup>윗첨자</sup></h1>
-    <h2>Heading 2<sub>아랫첨자</sub></h2>
-    <h3>Heading 3</h3>
-    <h4>Heading 4</h4>
-    <h5>Heading 5</h5>
-    <h6>Heading 6</h6>
+<h1>Heading 1<sup>윗첨자</sup></h1>
+<h2>Heading 2<sub>아랫첨자</sub></h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
 ```
 
+### ETC
+```
+#h1.brand{제목1}|c
+$<h1 class="brand">제목1</h1>
+$<!-- /.brand -->
 
+#h1.brand{제목1}|e
+&lt;h1 class="brand"&gt;제목1&lt;/h1&gt;
+```
 
+```
+수평선 (Horizontal Rule)
+<hr>
+```
+
+```
+단락(글의 묶음, 덩어리) Paragraph <p>
+두껍께(표현) - Bold <b>
+기울임(표현) - Italic, Oblique <i>
+강조       - Emphasize <em>
+보다 강조   - <Strong>
+```
+
+```
+라인 줄바꿈의 경우, Photoshop 키: Shift + Enter
+<h3>Design is All.<br>All is Design.</h3>
+
+<!-- 단락 생성의 경우, Photoshop 키: Enter -->
+<p>Design is All.</p>
+<p>All is Design.</p>
+```
 
 ### 기타/참고
 
