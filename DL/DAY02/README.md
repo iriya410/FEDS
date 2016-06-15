@@ -69,6 +69,28 @@ ctrl + c : 종료
 
 -
 
+###IE 조건부 서식
+```
+    <!--[if IE 6]><html lang="ko-KR" class="ie6"><![endif]-->
+    <!--[if IE 7]><html lang="ko-KR" class="ie7"><![endif]-->
+    <!--[if IE 8]><html lang="ko-KR" class="ie8"><![endif]-->
+    <!--[if IE 9]><html lang="ko-KR" class="ie9"><![endif]-->
+    <!--[if !IE]><!--><html lang="ko-KR"><!--<![endif]-->
+```
+
+### Heading 1~6
+```
+    <h1>Heading 1<sup>윗첨자</sup></h1>
+    <h2>Heading 2<sub>아랫첨자</sub></h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+```
+
+
+
+
 ### 기타/참고
 
 - [nodejs.org](http://nodejs.org/)
