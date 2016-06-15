@@ -88,7 +88,28 @@ ctrl + c : 종료
 <h6>Heading 6</h6>
 ```
 
-### ETC
+### 경로
+```
+절대 경로
+<p>
+	<a href="/">Home</a>
+	<a href="/views/about.html">About</a>
+	<a href="/views/project.html">Projects</a>
+	<a href="/views/service.html">Services</a>
+	<a href="/views/contact.html">Contact</a>
+</p>
+
+상대 경로
+<p>
+	<a href="index.html">Home</a>
+	<a href="views/about.html">About</a>
+	<a href="views/project.html">Projects</a>
+	<a href="views/service.html">Services</a>
+	<a href="views/contact.html">Contact</a>
+</p>
+```
+
+### 기타
 ```
 #h1.brand{제목1}|c
 $<h1 class="brand">제목1</h1>
