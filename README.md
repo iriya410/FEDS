@@ -1,7 +1,7 @@
-# iriya410.github.io
-Front End Develop SCHOOL
+###### Front-End Develop SCHOOL
 
 ------
-[DL 01](./DL/DAY01/README.md)
 
-[DL 02](./DL/DAY02/README.md)
+[DAY 01](./DL/DAY01/README.md)
+-
+[DAY 02](./DL/DAY02/README.md)
