@@ -7,8 +7,24 @@
 - HTML 1일차 내용 복습
 - Node.js 설치
 - http-server 모듈 설치/활용
+- HTML 문법 검사(유효성 검사)
+- IE 조건부 주석문
+- HTML 엔티티 코드
+- HTML 제목 6단계
+- HTML 보존(공백 포함) 텍스트
+- HTML 수평선
+- HTML 강조
+- HTML 줄바꿈
+- HTML 윗첨자/아랫첨자
+- 파비콘(Favicon: Favorite Icon)
+- HTML 링크(Link, A)
 
 -
+
+### Node.js 설치
+
+- [nodejs.org](http://nodejs.org/)
+- [npmjs.com](https://www.npmjs.com/)
 
 `Node.js`를 설치한 후에 설치된 버전 확인 명령어
 
@@ -16,6 +32,10 @@
 $ node --version # v4.2.4
 $ npm --version # 2.14.12
 ```
+
+-
+
+### http-server 모듈 설치/활용
 
 **http-server** 모듈 전역 설치
 
@@ -31,109 +51,117 @@ $ npm install --global http-server
 $ http-server -o
 ```
 
-```sh
-ctrl + c : 종료
-```
+> ※ **http-server** 모듈 종료 시에는 `Ctrl+C`를 누름.
 
 -
 
-### HTML 실습
+### IE 조건부 주석문
+
+IE v6 ~ v9 까지만 해석 가능.<br>
+특정 조건에서 주석이 아니라, 코드문으로 해석됨.
+
+> ※ [CSS 브라우저 핵](http://browserhacks.com/)이 아닌, 필터링 방법에 사용됨.
 
 ```html
-<!DOCTYPE html>
-<html lang="ko-KR">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <title>1일차 공부 내용 복습</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-  </head>
-  <body>
-
-    <!-- 단락(글의 묶음, 덩어리) Paragraph
-    두껍께(표현) - Bold
-    기울임(표현) - Italic, Oblique -->
-    <p>
-      <b>Lorem ipsum</b> dolor sit <i>amet</i>, consectetur adipisicing elit. Sapiente, ullam.
-    </p>
-
-    <P><i>피가 군영과 사랑의 가장 인도하겠다는 말이다. 되는 피어나는 그것을 그들에게 있는 그와 원질이 것은 사막이다. 끓는 간에 너의 아름다우냐? 바이며, 이상은 낙원을 그들에게 거선의 없으면 살 것이다. 피는 피어나는 간에 뭇 못하다 피에 뿐이다. 지혜는 따뜻한 않는 가는 온갖 들어 오아이스도 뿐이다. 끓는 두손을 얼음 그들은 창공에 얼마나 그들은 뿐이다.</i></P>
-    <P>이상은 되려니와, 황금시대를 부패뿐이다. 그러므로 투명하되 풍부하게 더운지라 끓는 사막이다. 곳이 놀이 그들에게 칼이다. 풍부하게 때에, 그러므로 있는 작고 칼이다. 창공에 할지라도 노래하며 쓸쓸하랴? 우리의 위하여서, 우리 크고 오아이스도 들어 바이며, 위하여서. 끓는 무엇을 군영과 소리다.이것은 산야에 듣기만 이상의 약동하다.</P>
-    <P>들어 설레는 그들에게 구하기 아름다우냐? 못할 고동을 인생에 밝은 지혜는 용기가 교향악이다. 싶이 몸이 우리는 인간은 날카로우나 봄바람이다. 인류의 공자는 사는가 그들을 것이다. 크고 천고에 우리의 같이 피에 살았으며, 사는가 힘차게 봄바람이다. 그들의 꾸며 되려니와, 이것은 따뜻한 착목한는 우리는 트고, 것이다.</P>
-
-  </body>
-</html>
-```
-
--
-
-###IE 조건부 서식
-```
-<!--[if IE 6]><html lang="ko-KR" class="ie6"><![endif]-->
-<!--[if IE 7]><html lang="ko-KR" class="ie7"><![endif]-->
-<!--[if IE 8]><html lang="ko-KR" class="ie8"><![endif]-->
-<!--[if IE 9]><html lang="ko-KR" class="ie9"><![endif]-->
+<!--[if IE 6]><html lang="ko-KR" class="lt-ie10 lt-ie9 lt-ie8 ie6"><![endif]-->
+<!--[if IE 7]><html lang="ko-KR" class="lt-ie10 lt-ie9 lt-ie8 ie7"><![endif]-->
+<!--[if IE 8]><html lang="ko-KR" class="lt-ie10 lt-ie9 ie8"><![endif]-->
+<!--[if IE 9]><html lang="ko-KR" class="lt-ie10 ie9"><![endif]-->
 <!--[if !IE]><!--><html lang="ko-KR"><!--<![endif]-->
 ```
 
-### Heading 1~6
+-
+
+### HTML 엔티티 코드
+
+특수 문자를 HTML에 삽입할 경우, 사용되는 코드.
+
+[HTML Entity Code](http://entitycode.com/)
+
+```html
+<!-- HTML Entity Code -->
+<title>2일차 공부는 재밌게! &lt; FDS 패스트 캠퍼스</title>
 ```
-<h1>Heading 1<sup>윗첨자</sup></h1>
-<h2>Heading 2<sub>아랫첨자</sub></h2>
+
+-
+
+### HTML 제목
+
+6단계로 구성된 제목 레벨.
+
+```html
+<!-- 제목 6단계 -->
+<!-- Heading 1~6 -->
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
 <h3>Heading 3</h3>
 <h4>Heading 4</h4>
 <h5>Heading 5</h5>
 <h6>Heading 6</h6>
 ```
 
-### 경로
-```
-절대 경로
-<p>
-	<a href="/">Home</a>
-	<a href="/views/about.html">About</a>
-	<a href="/views/project.html">Projects</a>
-	<a href="/views/service.html">Services</a>
-	<a href="/views/contact.html">Contact</a>
-</p>
+-
 
-상대 경로
-<p>
-	<a href="index.html">Home</a>
-	<a href="views/about.html">About</a>
-	<a href="views/project.html">Projects</a>
-	<a href="views/service.html">Services</a>
-	<a href="views/contact.html">Contact</a>
-</p>
-```
+### HTML 보존(공백 포함) 텍스트
 
-### 기타
-```
-#h1.brand{제목1}|c
-$<h1 class="brand">제목1</h1>
-$<!-- /.brand -->
+공백, 띄어쓰기 등 사용자가 입력한 내용을 보존하여 화면에 출력.
 
-#h1.brand{제목1}|e
-&lt;h1 class="brand"&gt;제목1&lt;/h1&gt;
+> ※ HTML 코드 출력 시에는 HTML 엔티티 코드 사용.
+
+```html
+<!-- Preserved Text -->
+<pre>
+  &lt;h1&gt;&lt;/h1&gt;
+  &lt;h2&gt;&lt;/h2&gt;
+  &lt;h3&gt;&lt;/h3&gt;
+  &lt;h4&gt;&lt;/h4&gt;
+  &lt;h5&gt;&lt;/h5&gt;
+  &lt;h6&gt;&lt;/h6&gt;
+</pre>
 ```
 
-```
-수평선 (Horizontal Rule)
+> ※ Emmet 필터 `e`를 사용하면 손쉽게 인코딩할 수 있다.
+
+> ```html
+> h1+h2+h3+h4+h5+h6|e
+> ```
+
+-
+
+### HTML 수평선
+
+```html
+<!-- 수평선 (Horizontal Rule) -->
 <hr>
 ```
 
-```
-단락(글의 묶음, 덩어리) Paragraph <p>
-두껍께(표현) - Bold <b>
-기울임(표현) - Italic, Oblique <i>
-강조       - Emphasize <em>
-보다 강조   - <Strong>
+-
+
+### HTML 강조
+
+표현만이 아닌 **강조의 의미를 지닌** 요소를 사용해야 **의미있는 구조화**가 된다.
+
+```html
+<!--
+  단락(글의 묶음, 덩어리) Paragraph
+  두껍께(표현) - Bold
+  기울임(표현) - Italic, Oblique
+  강조       - Emphasize <em>
+  보다 강조   - Strong
+-->
+<p>
+  <strong>Lorem ipsum</strong> dolor sit <em>amet</em>, consectetur adipisicing elit. Sapiente, ullam.
+</p>
 ```
 
-```
-라인 줄바꿈의 경우, Photoshop 키: Shift + Enter
+-
+
+### HTML 줄바꿈
+
+꼭 필요한 경우에만 사용.
+
+```html
+<!-- 라인 줄바꿈의 경우, Photoshop 키: Shift + Enter -->
 <h3>Design is All.<br>All is Design.</h3>
 
 <!-- 단락 생성의 경우, Photoshop 키: Enter -->
@@ -141,23 +169,87 @@ $<!-- /.brand -->
 <p>All is Design.</p>
 ```
 
-```
-div*10>h2#project-$${프로젝트 주제 $$}+p*10>lorem200
+-
 
-<div>*10
-  <h2 id=project-01,02,03....>프로젝트 주제 01,02,03...</h2>
-  <p>*10
-    lorem...
-  </p>
-</div>
+### HTML 윗첨자/아랫첨자
+
+```html
+<!-- SUP: Superscripted Text -->
+<!-- SUB: Subscripted Text -->
+<p>단락 내 <sup>윗첨자</sup></p>
+<p>단락 내 <sub>아랫첨자</sub></p>
 ```
+
+-
+
+### 파비콘(Favicon: Favorite Icon)
+
+```html
+<!-- Favicon: Favorite Icon -->
+<link rel="shortcut icon" href="images/starbucks-favicon.png">
+```
+
+-
+
+### HTML 하이퍼링크
+
+하이퍼링크 앵커 (페이지와 페이지를 연결)
+
+- 절대 경로(Server 환경에서 테스팅 가능)
+- 상대 경로
+
+> ※ 브라우저 캐시(Cache)가 남아있을 경우, 변경된 사항이 반영될 수 있음에 주의!
+
+```html
+<!-- 외부 페이지 연결: 하이퍼 링크 -->
+<p>
+  <a href="/">Home</a>
+  <a href="/views/about.html">About</a>
+  <a href="/views/project.html">Projects</a>
+  <a href="/views/service.html">Services</a>
+  <a href="/views/contact.html">Contact</a>
+</p>
+```
+
+목적지 앵커 (현재 페이지 하단 목적지로 화면 스크롤 이동)
+
+```html
+<h3 id="contents">목차</h3>
+<p>
+    <a href="#project-01">프로젝트 주제 01</a>
+    <br>
+    <a href="#project-02">프로젝트 주제 02</a>
+    <br>
+    <a href="#project-03">프로젝트 주제 03</a>
+    <br>
+    <a href="#project-04">프로젝트 주제 04</a>
+    <br>
+    <a href="#project-05">프로젝트 주제 05</a>
+    <br>
+    <a href="#project-06">프로젝트 주제 06</a>
+    <br>
+    <a href="#project-07">프로젝트 주제 07</a>
+    <br>
+    <a href="#project-08">프로젝트 주제 08</a>
+    <br>
+    <a href="#project-09">프로젝트 주제 09</a>
+    <br>
+    <a href="#project-10">프로젝트 주제 10</a>
+</p>
+<hr>
+<div>
+    <h2 id="project-01">프로젝트 주제 01</h2>
+    .
+    .
+    .
+```
+
+-
 
 ### 기타/참고
 
-- [nodejs.org](http://nodejs.org/)
-- [npmjs.com](https://www.npmjs.com/)
 - [Lorem Ipsum](https://ko.wikipedia.org/wiki/%EB%A1%9C%EB%A0%98_%EC%9E%85%EC%88%A8)
 - [한글입숨](http://hangul.thefron.me/)
+- [Placehold.it](http://placehold.it/)
 - [W3C HTML Validation Service](http://validator.w3.org/)
-- [HTML Entity Code](http://entitycode.com/)
 - [instantlogosearch](http://instantlogosearch.com/)
