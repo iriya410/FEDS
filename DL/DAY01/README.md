@@ -4,10 +4,10 @@
 
 ### 진행 내용
 
-1. 스쿨 과정 커리큘럼 [PDF](./Keynotes/00 Intro ─ FastCampus-SCHOOL.pdf)
-1. 월드 와이드 웹 (World Wide Web) [PDF](./Keynotes/01 World Wide Web ─ FastCampus SCHOOL.pdf)
-1. 웹 기술의 등장과 웹 코리아 [PDF](./Keynotes/02 Web Technology ─ FastCampus SCHOOL.pdf)
-1. 웹 표준 [PDF](./Keynotes/03 Web Standard ─ FastCampus SCHOOL.pdf)
+1. 스쿨 과정 커리큘럼 [PDF](./00 Intro ─ FastCampus-SCHOOL.pdf)
+1. 월드 와이드 웹 (World Wide Web) [PDF](./01 World Wide Web ─ FastCampus SCHOOL.pdf)
+1. 웹 기술의 등장과 웹 코리아 [PDF](./02 Web Technology ─ FastCampus SCHOOL.pdf)
+1. 웹 표준 [PDF](./03 Web Standard ─ FastCampus SCHOOL.pdf)
 
 -
 
