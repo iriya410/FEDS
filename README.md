@@ -4,4 +4,4 @@
 ------
 [DL 01]()
 
-[DL 02](iriya410.github.io)
+[DL 02]()
