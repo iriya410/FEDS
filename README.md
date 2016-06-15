@@ -3,7 +3,7 @@
 
 ------
 DL 01
-LINK : 
+LINK : [DAY01](iriya410/githun.io/DL/DAY01)
 
 DL 02
 LINK : [github](iriya410/github.io)
