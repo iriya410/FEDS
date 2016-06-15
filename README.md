@@ -2,6 +2,6 @@
 프론트엔드 개발 SCHOOL
 
 ------
-TD 02
-LINK : [github](http://iriya410/github.io)
+DL 02
+LINK : [github](iriya410/github.io)
 ------
