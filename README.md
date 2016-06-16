@@ -1,5 +1,3 @@
-######iriya410.github.io
-
 # Front-End Develop SCHOOL
 
 1일차 C
