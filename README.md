@@ -2,7 +2,11 @@
 
 # Front-End Develop SCHOOL
 
-[DAY 01](./DL/DAY01/README.md)
+1일차 C
+[D01](Class/D01(160614)/README.md)
 
-[DAY 02](./DL/DAY02/README.md)
+2일차 C
+[D02](Class/D02(160615)/README.md)
  
+3일차 A
+[D03](Assignment/D03(160616)/README.md)
