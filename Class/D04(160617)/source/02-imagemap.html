@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--[if IE 6]><html lang="ko-KR" class="ie6"><![endif]-->
+<!--[if IE 7]><html lang="ko-KR" class="ie7"><![endif]-->
+<!--[if IE 8]><html lang="ko-KR" class="ie8"><![endif]-->
+<!--[if IE 9]><html lang="ko-KR" class="ie9"><![endif]-->
+<!--[if !IE]><!--><html lang="ko-KR"><!--<![endif]-->
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>HTML 이미지맵(Image Map)</title>
+</head>
+	<body>
+
+	<img src="http://study.zumst.com/upload/00-C11-62-21-02/%EC%84%B8%EA%B3%84%EC%A7%80%EB%8F%84_5%EB%8C%80%EC%96%916%EB%8C%80%EB%A5%99.png" alt="세계지도 링크 서비스" usemap="#world-map">
+
+	<map name="world-map">
+		<area target="_blank" shape="poly" coords="80, 228, 58, 195, 95, 159, 121, 190, 121, 145, 143, 139, 190, 94, 266, 110, 315, 57, 365, 56, 333, 92, 350, 118, 334, 221, 253, 248, 187, 272, 137, 270, 91, 279, 72, 266" href="eurupe.html" alt="유럽" title="유럽페이지로 이동">
+		<!-- target="_blank" 새 페이지 열림 -->
+		<!-- shape="rect, cir, poly" 이미지맵 도형 -->
+		<!-- coords="" 좌표 -->
+		<!-- title="~이동" 마우스 오버 정보 -->
+		<!-- 좌표 겹칠 시 상단 에어리어 우선 -->
+		<area shape="poly" coords="543, 266, 548, 255, 567, 253, 561, 262, 568, 274, 559, 283, 550, 287, 548, 277" href="korea.html" alt="한국">
+		
+		<area shape="rect" coords="x1,y1,x2,y2" href="" alt="">
+		<area shape="cir" coords="center-x,,center-y,radius" href="" alt="">
+
+	</map>
+
+	</body>
+</html>
