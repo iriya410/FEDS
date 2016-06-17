@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<!--[if IE 6]><html lang="ko-KR" class="ie6"><![endif]-->
+<!--[if IE 7]><html lang="ko-KR" class="ie7"><![endif]-->
+<!--[if IE 8]><html lang="ko-KR" class="ie8"><![endif]-->
+<!--[if IE 9]><html lang="ko-KR" class="ie9"><![endif]-->
+<!--[if !IE]><!--><html lang="ko-KR"><!--<![endif]-->
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>HTML 표(Table)</title>
+
+	<style>
+		/*축약 요소에 마우스가 올라가면 UI 커서 모양이 도움말(?) 표시 됨.*/
+		/*속성 선택자(Attribute)*/
+		abbr[title] {
+			cursor: help;
+		}
+		
+		/*테이블 디자인*/
+		table {
+			/*테두리 사이 공간을 접는다*/
+			border-collapse: collapse;
+		}
+		table, th, td {
+			/*테두리 디자인: 두께 모양(직선) 색(글자 색을 상속)*/
+			border: 1px solid;
+		}
+		th, td {
+			padding: 1em;
+		}
+
+		.first-col {
+			background-color: yellow;
+		}
+	</style>
+</head>
+	<body>
+
+		<h2>문서 메타데이터 표</h2>
+		<!--
+		표에 스타일 속성을 사용핮 않는다. CSS로 대체한다. 
+		border
+		bgcolor
+		cellpadding
+		cellspacing
+		-->
+		
+		<!-- rowspan 행 병합 -->
+		<!-- colspan 열 병합 -->
+		<p id="metadata-table-summary">본 표는 4행 3열로 구성된...</p>
+		<!-- HTML5 에서 summary 속성을 지원하지 않기에 aria-descrivedby를 사용하여 summary를 연결 -->
+		<table class="demo" aria-descrivedby="metadata-table-summary">
+			<caption>테이블 제목</caption>
+
+			<tr>
+				<th>제목</th>
+				<th>제목</th>
+				<th>제목</th>
+			</tr>
+
+			<tr>
+				<td>내용</td>
+				<td>내용</td>
+				<td>내용</td>
+			</tr>
+			<tr>
+				<td colspan="2">내용</td>
+				<!-- <td>내용</td> -->
+				<td>내용</td>
+			</tr>
+			<tr>
+				<td>내용</td>
+				<td rowspan="2">내용</td>
+				<td>내용</td>
+			</tr>
+			<tr>
+				<td>내용</td>
+				<!-- <td>내용</td> -->
+				<td>내용</td>
+			</tr>
+		</table>
+
+		<!-- 마크업 순서: thead -> tfoot -> tbody -->
+		<!-- 화면 순서: thead -> tbody -> tfoot -->
+		<table>
+			<caption>적절한 테이블 제목</caption>
+
+			<!-- colgroup, col: span 속성이 없을 경우 사용 가능 -->
+			<!-- <colgroup>
+				<col class="first-col">
+				<col>
+				<col>
+			</colgroup>-->
+
+			<!-- 행 : table row -->
+			<thead>
+				<tr>
+					<!-- 행 제목 : table cell header -->
+					<!-- scope 속성은 제목에 붙이되 내용 연결에 따라 col과 row로 나뉜다 -->
+					<th scope="col">Element</th>
+					<th scope="col">Description</th>
+					<th scope="col">Surpport</th>
+				</tr>
+			</thead>
+
+			<!-- <tfoot>
+				<tr>
+					<td colspan="3">Total Count</td>
+				</tr>
+			</tfoot> -->
+			
+			<tr>
+				<th scope="row">
+					<code>&lt;base&gt;</code>
+				</th>
+				<!-- 행 내용 : table cell data -->
+				<td>
+					<!-- 축약 : Abbreviation  -->
+					HTML Base 요소 (<code>&lt;base&gt;</code>) 는 문서에 포함된 모든 상대 <a href="https://ko.wikipedia.org/wiki/URL" target="_blank"><abbr title="Uniform Resource Locator">URL</abbr></a>들의 기준 <abbr>URL</abbr>을 나타냅니다. 한 문서에 하나의 <strong><code>&lt;base&gt;</code></strong> 요소만이 올수 있습니다.
+				</td>
+				<td>
+					<abbr title="Hyper Text Markup Language">HTML 4.01</abbr>
+				</td>
+			</tr>
+
+			<tr>
+				<th scope="row">
+					<code>&lt;base&gt;</code>
+				</th>
+				<!-- 행 내용 : table cell data -->
+				<td>
+					<!-- 축약 : Abbreviation  -->
+					HTML Base 요소 (<code>&lt;base&gt;</code>) 는 문서에 포함된 모든 상대 <abbr title="Uniform Resource Locator">URL</abbr>들의 기준 <abbr>URL</abbr>을 나타냅니다. 한 문서에 하나의 <code>&lt;base&gt;</code> 요소만이 올수 있습니다.
+				</td>
+				<td>
+					<abbr title="Hyper Text Markup Language">HTML 4.01</abbr>
+				</td>	
+			</tr>
+
+			<tr>
+				<th scope="row">
+					<code>&lt;base&gt;</code>
+				</th>
+				<!-- 행 내용 : table cell data -->
+				<td>
+					<!-- 축약 : Abbreviation  -->
+					HTML Base 요소 (<code>&lt;base&gt;</code>) 는 문서에 포함된 모든 상대 <abbr title="Uniform Resource Locator">URL</abbr>들의 기준 <abbr>URL</abbr>을 나타냅니다. 한 문서에 하나의 <code>&lt;base&gt;</code> 요소만이 올수 있습니다.
+				</td>	
+				<td>
+					<abbr title="Hyper Text Markup Language">HTML 4.01</abbr>
+				</td>
+			</tr>
+
+			<tr>
+				<th scope="row">
+					<code>&lt;base&gt;</code>
+				</th>
+				<!-- 행 내용 : table cell data -->
+				<td>
+					<!-- 축약 : Abbreviation  -->
+					HTML Base 요소 (<code>&lt;base&gt;</code>) 는 문서에 포함된 모든 상대 <abbr title="Uniform Resource Locator">URL</abbr>들의 기준 <abbr>URL</abbr>을 나타냅니다. 한 문서에 하나의 <code>&lt;base&gt;</code> 요소만이 올수 있습니다.
+				</td>
+				<td>
+					<abbr title="Hyper Text Markup Language">HTML 4.01</abbr>
+				</td>
+			</tr>
+		</table>
+
+	</body>
+</html>
