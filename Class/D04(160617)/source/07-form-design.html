@@ -19,10 +19,12 @@
 			<p>
 				<!-- input에 암묵적 레이블 연결 (일부 지원 안함)-->
 				<!-- <label>ID : <input type="text"></label> -->
-				<!-- input 요소에 명시적 레이블 연결 -->
+
+				<!-- input 요소에 명시적 레이블 연결 (가급적 명시적 연결 사용) -->
 				<label for="user_id">ID</label> : <input id="user_id" name="user_id" type="text">
 			</p>
 			<p>
+				<!-- aria-label 사용 시  screen reader가 label태그내의 내용이 아니라 aria-label의 문장을 읽어줌 -->
 				<label for="user_password" aria-label="password">PASS</label> : <input id="user_password" name="user_password" type="password">
 			</p>
 			<p><label for="user_email">E-mail</label> : <input id="user_email" name="user_email" type="email"></p>
