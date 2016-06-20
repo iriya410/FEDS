@@ -1,6 +1,6 @@
 ###### Front-End Develop SCHOOL
 
-# DAY 04
+# DAY 03
 
 ### 진행 내용
 
