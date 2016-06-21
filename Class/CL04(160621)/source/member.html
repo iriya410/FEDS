@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<meta name="description" content="member register">
+    	<meta name="keywords" content="member, register">
+		<title>회원 가입 폼</title>
+	</head>
+	<body>
+
+		<form method="post" enctype="multipart/form-data">
+			<fieldset>
+				<legend>필수입력사항</legend>
+				<ul>
+					<li>
+						<h3><label for="id">ID</label></h3>
+						<input type="text" id="id" name="user_id">
+					</li>
+					<li>
+						<h3><label for="pass" aria-label="password">PASSWORD</label></h3>
+						<input type="text" id="pass" name="user_pass">
+					</li>
+					<li>
+						<h3><label for="passc" aria-label="password confirm">PASS Confirm</label></h3>
+						<input type="text" id="passc">
+					</li>
+					<li>
+						<h3><label for="email">EMAIL</label></h3>
+						<input type="email" id="email" name="user_email">
+					</li>
+				</ul>
+			</fieldset>
+
+			<fieldset>
+				<legend>선택입력사항</legend>
+				<ul>
+					<li>
+						<h3>ADDRESS</h3>
+						<ul>
+							<li>
+								<label for="add1" aria-label="basic address">ADD 1</label> : <input type="text" id="add1" name="user_add1">
+							</li>
+							<li>
+								<label for="add2" aria-label="detail address">ADD 2</label> : <input type="text" id="add2" name="user_add2">
+							</li>	
+						</ul>
+					</li>
+
+					<li>
+						<h3>GENDER</h3>
+						<label><input type="radio" name="gender">Mail</label>
+						<label><input type="radio" name="gender">Femail</label>
+					</li>
+
+					<li>
+						<h3>HOBBY</h3>
+						<label><input type="checkbox" name="hobby">Reading</label>
+						<label><input type="checkbox" name="hobby">Sleeping</label> 
+						<label><input type="checkbox" name="hobby">Web Surfing</label>
+					</li>
+
+					<li>
+						<h3><label for="select_id">SELECT TEST</label></h3>
+						<select id="select_id" name="select_name">
+							<option label="select">select</option>
+							<option value="o1" label="option 1">option 1</option>
+							<option value="o2" label="option 2">option 2</option>
+						</select>
+					</li>
+
+					<li>
+						<h3>PICTURE</h3>
+						<input type="file">
+					</li>
+				</ul>
+			</fieldset>
+
+			<div>
+				<input type="submit" value="가입">
+			</div>
+		</form>
+
+	</body>
+</html>
