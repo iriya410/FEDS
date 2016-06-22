@@ -2,7 +2,7 @@
 
 ### 디자이너 관점에서 살펴 본 웹 디자인의 역사
 
-![A brief history of web design for designers](../Assets/HistoryOfWebDesign-01.jpg)
+![A brief history of web design for designers](notenotefWebDesign-01.jpg)
 
 웹 디자인의 역사는 어떻게 발전해왔을까요? 반응형 웹 디자인을 설명했던 산디스 씨(Sandijs Ruluks)가, 이번에는 웹 디자인의 역사를 짤방으로 간단하게 정리했는데요. 그는 웹 디자이너들이 **'디자이너가 개발을 배워야 하는가?'** 논하기 전에, 웹 디자인의 역사에 대해 알 필요가 있다고 생각해서 이 글을 썼습니다.
 
@@ -10,7 +10,7 @@
 
 ### 1. 웹의 시작 (1989)
 
-![The dark ages of web design (1989)](../Assets/HistoryOfWebDesign-02.gif)
+![The dark ages of web design (1989)](notenotefWebDesign-02.gif)
 
 웹 디자인의 초창기는 매우 어두웠습니다. 검은색화면에 단색의 글씨만 존재했지요. 비주얼 디자인이라고 할 수 있는 것은 '특수문자'와 '탭키'를 이용한 것이 전부였습니다.
 
@@ -21,7 +21,7 @@
 
 ### 2. 테이블 - 비주얼 웹 디자인의 시작 (1995)
 
-![Tables – The beginning (1995)](../Assets/HistoryOfWebDesign-03.gif)
+![Tables – The beginning (1995)](notenotefWebDesign-03.gif)
 
 웹 브라우저가 생겨나고, 이미지를 올릴 수 있게 된 이후에야 비로서 웹 디자인은 비주얼 디자인 모습 다운 모습을 띄기 시작했습니다. HTML은 테이블을 통해 복잡한 2차원 정보를 구성할 수 있는 방법을 제공했으나, 사람들은 레이아웃을 잡기 위한 목적으로 테이블을 사용하기 시작했습니다. 테이블은 수직 정렬이나 그리드를 적용해 그래픽 디자인하기 편하다는 점이 이유였습니다. 하지만 이 방식은 테이블 본연의 목적을 벗어난 사용법으로 잘못된 방법이었습니다.
 
@@ -44,7 +44,7 @@
 
 ### 3. 자바스크립트의 등장 (1995)
 
-![JavaScript comes to the rescue (1995)](../Assets/HistoryOfWebDesign-04.gif)
+![JavaScript comes to the rescue (1995)](note/HistoryOfWebDesign-04.gif)
 
 자바스크립트가 HTML의 한계를 극복하고 능력을 끌어올리기 시작했습니다. 예를 들어 팝업 창이 필요하거나, 동적으로 코드를 수정하고 싶을 때 자바스크립트를 사용했습니다. 웹사이트에 동적인 요소가 추가되면서 웹사이트는 한층 다채로워졌습니다. 요즘은 CSS가 좋아져서 자바스크립트를 대체하고 있지만, 그래도 여전히 강력한 재료입니다.
 
@@ -55,7 +55,7 @@
 
 ### 4. 자유로운 표현력의 황금시대 - 플래시 (1996)
 
-![The golden era of freedom – Flash (1996)](../Assets/HistoryOfWebDesign-05.gif)
+![The golden era of freedom – Flash (1996)](note/HistoryOfWebDesign-05.gif)
 
 플래시가 보급되면서 웹 디자인의 표현력은 황금시대를 맞이 합니다. 디자이너는 모양, 레이아웃, 애니메이션, 인터랙션, 그리고 어떠한 폰트도 사용할 수 있었습니다. 플래시는 사용자 컴퓨터에 최신 버전이 설치되어 있고, 약간의 로딩시간을 기다리면 마법처럼 현란하게 작동했습니다. 하지만 검색에 최적화 되지 않았으며, 높은 CPU 점유율 때문에 아이폰에서 제외됩니다. (그러면서 웹 디자인에서 플래시는 몰락하게 되죠)
 
@@ -66,7 +66,7 @@
 
 ### 5. CSS (1998)
 
-![CSS (1998)](../Assets/HistoryOfWebDesign-06.gif)
+![CSS (1998)](note/HistoryOfWebDesign-06.gif)
 
 플래시와 비슷하게 나온 CSS는 기술적으로 더 좋은 방식으로 접근하는데요. 플래시와 달리 기존 HTML로 구조를 유지하면서 CSS로 꾸미는 방법입니다. HTML을 뼈와 살이라면, CSS는 옷이라고 할 수 있겠네요.
 
@@ -81,7 +81,7 @@ CSS의 첫 번째 버전은 유연하지 않았습니다. 가장 큰 문제는 �
 
 ### 6. 모바일 시대의 도래 : 그리드 & 프레임워크 디자인 (2007)
 
-![Mobile uprising – Grids and frameworks (2007)](../Assets/HistoryOfWebDesign-07.gif)
+![Mobile uprising – Grids and frameworks (2007)](note/HistoryOfWebDesign-07.gif)
 
 모바일로 웹사이트를 브라우징 하는 것은 대단한 도전이었습니다. 속도가 매우 느리고, 기기에 따라 디자인이 전부 달랐습니다. 또한, 잘 못 쓰면 폭탄 요금을 맞을 수 있었기 때문에 인터넷 버튼을 누르는 것조차 두려워했습니다.
 
@@ -96,7 +96,7 @@ CSS의 첫 번째 버전은 유연하지 않았습니다. 가장 큰 문제는 �
 
 ### 7. 반응형 웹 디자인 (2010)
 
-![Responsive web design (2010)](../Assets/HistoryOfWebDesign-08.gif)
+![Responsive web design (2010)](note/HistoryOfWebDesign-08.gif)
 
 디자이너 겸 개발자 에단 마콧 씨(Ethan Marcotte)는 같은 콘텐츠로 화면 넓이에 따라 디자인을 바꿀 수 있는 '반응형 웹 디자인'이라는 용어를 만들고 제안했습니다. 반응형 웹 디자인은 HTML 수정없이 CSS 수정으로 모든 크기의 화면에 대응할 수 있습니다. 모바일 웹사이트를 따로 만들 필요도 없어 효율적이며, 어디서나 같은 콘텐츠를 보여줄 수 있습니다.
 
@@ -109,7 +109,7 @@ CSS의 첫 번째 버전은 유연하지 않았습니다. 가장 큰 문제는 �
 
 ### 8. 플랫 디자인의 시대 (2010)
 
-![The times of the flat (2010)](../Assets/HistoryOfWebDesign-09.gif)
+![The times of the flat (2010)](note/HistoryOfWebDesign-09.gif)
 
 수 많은 기기에 맞춰 디자인하는 것은 시간이 오래 걸립니다. 이에 사람들은 정교하지만 오랜 시간이 걸리는 스큐어모픽 디자인을 버리기 시작합니다. 그리고 단순하고 콘텐츠가 돋보이는 플랫디자인을 선호하기 시작하는데요. 형태는 기능을 따른다는 말처럼, 이미 오래전부터 플랫디자인의 시대가 예견되었을지도 모릅니다.
 
@@ -120,7 +120,7 @@ CSS의 첫 번째 버전은 유연하지 않았습니다. 가장 큰 문제는 �
 
 ### 9. 웹 디자인의 미래는? (2014)
 
-![The bright future (2014)](../Assets/HistoryOfWebDesign-10.gif)
+![The bright future (2014)](note/HistoryOfWebDesign-10.gif)
 
 우리가 디자인한 이미지파일이 바로 브라우저에서 작동한다면 어떨까요? 거기에 웹 표준과 접근성까지 준수하면서 모든 환경에 대응한다면 어떨까요? 디자이너들은 디자인에 집중하고, 개발자들은 브라우저 호환을 걱정할 필요 없이, 실질적인 개발에 집중할 수 있을 것입니다. 물론 저 같은 웹 퍼블리셔는 일자리를 잃을 수도 있겠지만, 기술의 발전에 뿌듯할 것 같네요. 어쩌면 미래에 기술력보다 더 중요한 것은 좋은 웹사이트를 만들수 있는 기획과 창의력이 아닐까 생각해봅니다.
 

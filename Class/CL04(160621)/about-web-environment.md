@@ -92,7 +92,7 @@ URL(IP와 Port로 구성)<br>
 
 - [sansting.com](http://www.sansting.com/) - 내게 맞는 웹호스팅 환경을 이제 쉽게 찾으세요.
 
-![compare hosting](../Assets/compare-hosting.jpg)
+![compare hosting](note/compare-hosting.jpg)
 
 -
 
