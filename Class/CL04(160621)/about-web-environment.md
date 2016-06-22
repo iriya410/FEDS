@@ -4,7 +4,7 @@
 
 **클라이언트**와 **서버**로 나뉘는 **네트워크 아키텍처**를 나타낸다.
 
-![web-env](../Assets/web-env.jpg)
+![web-env](note/web-env.jpg)
 
 -
 
