@@ -2,7 +2,7 @@
 
 ### 디자이너 관점에서 살펴 본 웹 디자인의 역사
 
-![A brief history of web design for designers](notenotefWebDesign-01.jpg)
+![A brief history of web design for designers](note/HistoryOfWebDesign-01.jpg)
 
 웹 디자인의 역사는 어떻게 발전해왔을까요? 반응형 웹 디자인을 설명했던 산디스 씨(Sandijs Ruluks)가, 이번에는 웹 디자인의 역사를 짤방으로 간단하게 정리했는데요. 그는 웹 디자이너들이 **'디자이너가 개발을 배워야 하는가?'** 논하기 전에, 웹 디자인의 역사에 대해 알 필요가 있다고 생각해서 이 글을 썼습니다.
 
@@ -10,7 +10,7 @@
 
 ### 1. 웹의 시작 (1989)
 
-![The dark ages of web design (1989)](notenotefWebDesign-02.gif)
+![The dark ages of web design (1989)](note/HistoryOfWebDesign-02.gif)
 
 웹 디자인의 초창기는 매우 어두웠습니다. 검은색화면에 단색의 글씨만 존재했지요. 비주얼 디자인이라고 할 수 있는 것은 '특수문자'와 '탭키'를 이용한 것이 전부였습니다.
 
@@ -21,7 +21,7 @@
 
 ### 2. 테이블 - 비주얼 웹 디자인의 시작 (1995)
 
-![Tables – The beginning (1995)](notenotefWebDesign-03.gif)
+![Tables – The beginning (1995)](note/HistoryOfWebDesign-03.gif)
 
 웹 브라우저가 생겨나고, 이미지를 올릴 수 있게 된 이후에야 비로서 웹 디자인은 비주얼 디자인 모습 다운 모습을 띄기 시작했습니다. HTML은 테이블을 통해 복잡한 2차원 정보를 구성할 수 있는 방법을 제공했으나, 사람들은 레이아웃을 잡기 위한 목적으로 테이블을 사용하기 시작했습니다. 테이블은 수직 정렬이나 그리드를 적용해 그래픽 디자인하기 편하다는 점이 이유였습니다. 하지만 이 방식은 테이블 본연의 목적을 벗어난 사용법으로 잘못된 방법이었습니다.
 
