@@ -10,7 +10,7 @@
 
 **[20분]** 팀 단위로 디자이너가 제작한 [PSD(Photoshop Document) 파일](https://www.dropbox.com/sh/pl3vrst3re24sht/AAD-koAIko_i493P-v9hSF1Ia?dl=0)을 선택 후, 개별 분석하여 HTML 문서 구조화(Markup) 한다.
 
-![PSD_Lists](../Assets/PSD_Lists.png)
+![PSD_Lists](note/PSD_Lists.png)
 
 각 팀은 팀원 모두가 동일한 PSD를 선택하여 문서 구조화하여야 한다.<br>
 만약 선택 문제로 의견이 분분한 경우, 아래 명시된 팀별 PSD를 선택한다.

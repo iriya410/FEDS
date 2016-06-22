@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+/*스타일 모듈 로드*/
+/*@import url(colors.css);
+@import "common.css";
+@import url(grid.css);
+@import "layout.css";*/
+
+/*웹 브라우저 기본 스타일 덮어쓰기*/
+body {
+	margin: 0px;
+}
+
+article {
+	/* 두께 모양 색상 */
+	border: 1px solid #454545;
+}
+
+article h2 {
+	font-weight: 100;
+}
+
+article img {
+	/*img 요소는 inline block요소라 margin, padding - top, bottom 설정이 가능*/
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+article p {
+	line-height: 30px;
+}

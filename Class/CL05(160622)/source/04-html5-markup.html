@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta charset="UTF-8">
+		<title>(X)HTML vs HTML5 Markup</title>
+
+		<script>
+			var my_num_input = document.createElement('input');
+			my_num_input.setAttribute('type', 'number');
+
+			if(my_num_input.getAttribute('type') == 'text') {
+
+			}
+		</script>
+	</head>
+	<body>
+
+	<!-- 블록 요소는 인라인 요소를 자식으로 가질 수 있고 인라인 요소는 블록 요소를 자식으로 가질 수 없음(<a>는 가능) -->
+	<!-- <a>안에 클릭 가능한 요소는 올 수 없음 -->
+
+	<!-- HTML4.01 or XHTML 1.0 Markup -->
+	<div id="header"></div>
+	<div id="gnb"></div>
+	<div id="main"></div>
+	<div id="sidebar"></div>
+	<div id="footer"></div>
+
+	<!-- HTML5 Markup -->
+	<header></header>
+	<nav></nav>
+	<section>
+		<article>
+			<section>
+				<article>
+					
+				</article>
+			</section>
+		</article>
+	</section>
+	<!-- section 요소(section, article, nav, aside)는 각각 <header>를 가질 수 있고 접근성 관점에서 제목(Header)을 정하길 권장 -->
+	<!-- main 한번만 사용 section article은 중첩가능 -->
+	<!-- <main></main> -->
+	<aside></aside>
+	<footer></footer>
+
+	</body>
+</html>
