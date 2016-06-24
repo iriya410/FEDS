@@ -1,6 +1,6 @@
 ###### Front-End Develop SCHOOL
 
-# DAY 03
+# Assignment, Study 01
 
 ### 진행 내용
 

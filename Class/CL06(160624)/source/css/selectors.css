@@ -1,0 +1,132 @@
+@charset "utf-8";
+/*! selectors.css © aprilshower, 2016 */
+/*
+ * CSS 선택자
+ * 요소 선택자 E
+ * 전체 선택자 *
+ * 자손 선택자 E(P) E(C)
+ * > Child Combinator
+ * #shopping1 > h2 {}
+ * 그룹핑 E,E,E
+
+ * #아이디 선택자
+ * 0100
+
+ * .클래스 선택자
+ * 0010
+ * E.class_name 특정 컨셉이 아닌 이상 사용 X
+ * .class_name 일반적 사용
+ * .class_name1.class_name2 멀티 클래스 - 두개의 클래스가 모두 있을때 디자인이 적용
+ * .class_name1 .class_name2 - class_name1를 가진 요소의 자식이 class_name2를 가져야 디자인을 적용
+ 
+ * 인접 형재 선택자
+ * .parent E + E2 - E 다음에 나오는 E2에 디자인을 적용
+ * .parent E ~ E2 - E 다음에 나오는 모든 E2에 디자인을 적용
+ 
+ * 속성 선택자
+ * [attr]
+ * [attr="value"]
+ * ID 선택자
+ * [id] {}
+ */
+
+/*body {
+	margin: 0px;
+	글자 크기 변경
+	em단위는 상대값으로 부모값에 대해 상대적으로 변경된다.
+	font-size: 20px;
+	고정 값 px을 상대 값으로 변경하고자 한다면?
+	Emmet Evaluate Math Expression - Ctrl + Shift + Y
+	font-size: 1.25em; 20/16 : 상대값/기본값
+}*/
+
+/*h3 {
+	margin-top: 0px;
+	margin-bottom: 0px;
+} */
+
+/*성능 저하 쓰지 말것*/
+/** {
+	margin: 0px;
+}*/
+
+/*body, body * {
+	margin: 0px;
+}*/
+
+#shopping1 * {
+	margin: 0px;
+}
+
+#shopping1 > h2 {
+	color: #D12F2D;
+}
+
+.btn {
+	border: none;
+	background-color: #000000;
+	color: #ffffff;
+}
+
+.btn_buy {
+	color: orange;
+}
+
+.btn_cancel_buy {
+	color: lime;
+}
+
+.notice {}
+.warning {}
+.error {}
+.success {}
+
+.parent p {
+	border: 1px solid red;
+}
+
+.parent h4 + p {
+	border: 1px solid blue;
+}
+
+.parent2 p {
+	border: 1px solid lime;
+}
+
+.parent2 h3 ~ p {
+	border: 1px solid orange;
+}
+
+#shoppingGrpTab > #shopping1 + h3 a {
+	color: darkred;
+}
+
+#shoppingGrpTab > #shopping1 ~ h3 a {
+	color: lightblue;
+}
+
+[id] {
+	border: 4px double blue;
+}
+
+[class] {
+	outline: 3px solid rgba(255, 255, 0, 0.5); 
+}
+
+/* #shopping3 {} */
+/*[id="shopping3"] {
+	border: 4px solid #303030;
+}*/
+/*#shopping3 [class="screen_out"] {
+	border: 4px solid #303030;
+}*/
+/* screen_out클래스로 시작할때 */
+#shopping3 [class^="screen_out"] {
+	border: 4px solid #303030;
+}
+
+/* screen_out클래스로 끝날때 */
+#shopping3 [class$="screen_out"] {
+	border: 4px solid #292DD5;
+}
+

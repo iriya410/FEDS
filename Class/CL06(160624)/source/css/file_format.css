@@ -1,0 +1,52 @@
+body {
+	margin: 10%;
+}
+
+.reset_list ul,
+.reset_list ol {
+/*기본적인 리스트 스타일 초기화*/
+	list-style-type: none;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 0px;
+}
+
+.lecture_file_list a {
+	display: block;
+	font-size: 1.94em;
+	text-decoration: none;
+	text-indent: 38px;
+	background-repeat: no-repeat;
+	background-position: 0px 6px;
+}
+
+/* 파일 포맷에 따라 자동적으로 아이콘을 배경이미지로 설정하는 스타일 */
+a[href^="http://"][target="_blank"] {
+	background-image: url(../images/external-link.png);
+	background-position: 0px 10px;
+}
+
+a[href$=".ai"] {
+	background-image: url(../images/ai.png);
+	color: #3B2A10;
+}
+a[href$=".psd"] {
+	background-image: url(../images/psd.png);
+	color: #192257;
+}
+a[href$=".avi"] {
+	background-image: url(../images/avi.png);
+	color: #838383;
+}
+a[href$=".mov"] {
+	background-image: url(../images/mov.png);
+	color: #76B8B7;
+}
+a[href$=".doc"] {
+	background-image: url(../images/doc.png);
+	color: #067FCB;
+}
+a[href$=".txt"] {
+	background-image: url(../images/txt.png);
+	color: #B3B3B3;
+}
