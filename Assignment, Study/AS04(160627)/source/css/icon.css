@@ -1,0 +1,88 @@
+.reset_list ul, .reset_list ol {
+	list-style-type: none;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 0px;
+}
+
+.ul_file_list a {
+	display: block;
+	font-size: 2em;
+	text-decoration: none;
+	text-indent: 32px;
+	background-repeat: no-repeat;
+	background-position: 0px 6px;
+}
+
+a[href$=".aac"] {
+	background-image: url(../icon/aac.png);
+	color: #3B2A10;
+}
+a[href$=".ai"] {
+	background-image: url(../icon/ai.png);
+	color: #3B2A10;
+}
+a[href$=".avi"] {
+	background-image: url(../icon/avi.png);
+	color: #3B2A10;
+}
+a[href$=".doc"] {
+	background-image: url(../icon/doc.png);
+	color: #3B2A10;
+}
+a[href$=".flac"] {
+	background-image: url(../icon/flac.png);
+	color: #3B2A10;
+}
+a[href$=".gif"] {
+	background-image: url(../icon/gif.png);
+	color: #3B2A10;
+}
+a[href$=".html"] {
+	background-image: url(../icon/html.png);
+	color: #3B2A10;
+}
+a[href$=".jpg"] {
+	background-image: url(../icon/jpg.png);
+	color: #3B2A10;
+}
+a[href$=".js"] {
+	background-image: url(../icon/js.png);
+	color: #3B2A10;
+}
+a[href$=".mov"] {
+	background-image: url(../icon/mov.png);
+	color: #3B2A10;
+}
+a[href$=".mp3"] {
+	background-image: url(../icon/mp3.png);
+	color: #3B2A10;
+}
+a[href$=".mp4"] {
+	background-image: url(../icon/mp4.png);
+	color: #3B2A10;
+}
+a[href$=".pdf"] {
+	background-image: url(../icon/pdf.png);
+	color: #3B2A10;
+}
+a[href$=".png"] {
+	background-image: url(../icon/png.png);
+	color: #3B2A10;
+}
+a[href$=".psd"] {
+	background-image: url(../icon/psd.png);
+	color: #3B2A10;
+}
+a[href$=".tiff"] {
+	background-image: url(../icon/tiff.png);
+	color: #3B2A10;
+}
+a[href$=".txt"] {
+	background-image: url(../icon/txt.png);
+	color: #3B2A10;
+}
+a[href$=".xls"] {
+	background-image: url(../icon/xls.png);
+	color: #3B2A10;
+}
