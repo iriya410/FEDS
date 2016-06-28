@@ -1,0 +1,202 @@
+/*@import url("common.css");*/
+/*
+ * 속성 선택자
+ * [attr]
+ * [attr="value"]
+ * [attr~="value"] 
+ * [attr|="value"]
+ * [attr*="value"]
+ */
+
+/* 공백( )으로 나뉜 단어를 구분 */
+ [class~="container"] {
+ 	border: 1px dashed #cacaca;
+ 	padding: 1em;
+ }
+
+/* 대쉬(-)로 나뉜 단어를 구분 */
+ [lang|="en"] {
+ 	text-decoration: underline;
+ }
+
+ /* 별표(*)로 포합된 모든 단어를 구분 */
+
+/*
+ * 상태 디자인 선택자
+ * Pseudo Class: 가상(유사, 의사) 클래스
+
+ p:hover - p객체에 마우스가 올라갔을때
+
+ p :hover == p *:hover - p객체내의 모든 요소에 마우스가 올라갔을때
+
+ * Normal
+ * Hover(Mouse Over)
+ * Active(Mouse Down)
+
+   Hyperlink(<a href>)
+ * Normal
+ * Visited
+ * Hover
+ * Active
+ * Focus(Keyboard Focus)
+ */
+
+/* Normal */
+.container p {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 0.88em;
+	color: #84888a;
+	background-color: #ffffff;
+}
+
+/* Hover */
+.container p:hover {
+	color: #0c0d0d;
+	background-color: #bfbfbf;
+}
+
+/* Active */
+.container p:active {
+	color: #ffffff;
+	background-color: #000000;
+}
+
+a /*a:link*/ {
+	padding-left: 0.25em;
+	padding-right: 0.25em;
+	text-decoration: none;
+	color: #363636;
+	background-color: #ebebeb;
+}
+
+a:visited {
+	color: #bfbfbf;
+	background-color: #ffffff;
+}
+/*
+ * 가능한 상태
+ * color
+ * background-color
+ * border-color (and border-color for separate sides)
+ * outline color
+ * column-rule-color
+ * the color parts of fill and stroke
+ */
+
+a:hover {
+	/*text-decoration: underline;*/
+	padding-bottom: 1px;
+	border-bottom: 2px solid;
+}
+
+a:active {
+ 	background-color: #ffff00;
+}
+
+a:focus {
+	outline: 3px solid #fc414b;
+}
+
+a:focus:hover {
+	outline-offset: 10px;
+}
+
+.box {
+	display: inline-block;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	width: 200px;
+	height: 200px;
+	outline: none;
+	background-color: #efefef;
+}
+
+.box:hover {
+	outline: 10px solid #fe4949;
+}
+
+ /* rounded_box */
+.rounded_box {
+	width: 200px;
+	background-color: #eeeeee;
+}
+
+:lang(ja) {
+	/* lang속성이 ja인 요소 */
+}
+
+/*
+ * 가상 요소
+ * Pseudo Element
+ * 가상으로 요소를 만들어 줌
+
+ * CSS2, CSS2.1  | CSS3
+ * :first-line   | ::first-line
+ * :first-letter | ::first-letter
+ * :before       | ::before
+ * :after        | ::after 
+ */
+
+/* Dropcap */
+.dropcap_demo {
+	color: #EC0904;
+}
+
+.dropcap::first-letter {
+	font-size: 300%;
+	color: #EC0904;
+	line-height: 1;
+}
+
+.dropcap {
+	margin: 0;
+}
+
+/*
+ * ::before
+ * ::after
+ */
+
+ abbr {
+ 	cursor: help;
+ }
+
+.msg .before,
+.msg::before {
+	content: "before msg";
+	color: #3a0099;
+}
+
+.msg .after,
+.msg::after {
+	content: "after msg";
+	color: #604887;
+}
+
+/*
+ * 접근성 관점에서 링크의 주소를 출력하는 스타일
+ * @media print - 프린트 상태일때
+ * a객체의 뒤에 가상요소를 삽입, a객체의 href요소를 표시
+ */
+ @media print{
+ 	a::after {
+		content: "("attr(href)")";
+		/*content: "("+attr(href)+")"*/
+		color: #1F8FE5;
+	}
+
+	abbr::after {
+		content: "["attr(title)"]";
+	}
+}
+
+.parent *:not(a):not(p) {
+	border: 1px solid #b64926;
+}
+
+::selection {
+	text-shadow: 2px 2px 8px #6300b5;
+	background-color: red;
+	color: #fff;
+}
