@@ -9,12 +9,14 @@
  */
 
 /* 공백( )으로 나뉜 단어를 구분 */
+/* 멀티클래스 사용시 적용 */
  [class~="container"] {
  	border: 1px dashed #cacaca;
  	padding: 1em;
  }
 
 /* 대쉬(-)로 나뉜 단어를 구분 */
+/* 단어 앞에 붙어야함 */
  [lang|="en"] {
  	text-decoration: underline;
  }
@@ -26,6 +28,8 @@
  * Pseudo Class: 가상(유사, 의사) 클래스
 
  p:hover - p객체에 마우스가 올라갔을때
+ (p이고 :hover라는 조건을 만족했을때)
+ ex:.parent:first-child - .parent이고 형제 요소중에 처음인 것
 
  p :hover == p *:hover - p객체내의 모든 요소에 마우스가 올라갔을때
 
