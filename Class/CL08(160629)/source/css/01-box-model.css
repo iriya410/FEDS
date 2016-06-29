@@ -1,0 +1,26 @@
+/*
+ * 마진이 상하 방향으로 접혀지는 현상
+ * 좌우로는 접히지 않음
+ */
+
+h1 {
+	margin-bottom: 1.88em; /* em단위는 그 요소의 글자 크기에 상대적이라 margin-bottom을 30px로 계산하더라도 폰트 사이즈가 2.2em이기에 66px이 나옴 */
+	font-weight: bolder; /* 하위 호환 고려 */
+	font-weight: 900; /* 100-400(normal) 700(bold) 900(bolder) */
+	font-size: 2.2em;
+}
+
+p {
+	color: #323130;
+	font-size: 0.875em;
+}
+
+p a {
+	background-color: #000000;
+	color: #ffffff;
+}
+
+p span {
+	background-color: #ff0000;
+	color: #ffff00;
+}

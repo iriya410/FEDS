@@ -1,0 +1,98 @@
+/* em의 어려움 */
+/* 폰트 사이즈를 상속받기 때문에 기준이되는 폰트 사이즈가 매번 달라지기 때문에 실무에 적용하기 힘들다 */
+html {
+	font-size: 100%; /*16px*/
+}
+
+/* CSS3 미디어쿼리 - @media 환경 and 조건1 and 조건2 */
+/* only는 최신 브라우저만 지원, 조건은 괄호()안에 넣는다 */
+/* 중단점 (Breakpoint) 설계 (Design) */
+/* --1-- 600 --2-- 1000 --3-- */
+/* 미디어 쿼리에서 em단위는 16px고정 */
+@media only screen and (max-width: 37.5em) {
+	html {
+		font-size: 60%;
+	}
+
+	body::before {
+		content: "스크린의 폭 0px ~ 600px";
+	}
+	body {
+		background-color: #000000;
+	}
+}
+
+@media only screen and (min-width: 37.5625em) and (max-width: 62.5em) {
+	body::before {
+		content: "스크린의 폭 600px ~ 1000px";
+	}
+	body {
+		background-color: #646464;
+	}
+}
+
+@media only screen and (min-width: 62.5625em) {
+	html {
+		font-size: 140%;
+	}
+
+	body::before {
+		content: "스크린의 폭 1000px ~ ...";
+	}
+	body {
+		background-color: #ffffff;
+	}
+}
+
+
+body {
+	font-size: 0.875em; /*14px*/
+}
+
+/* 
+ * rem(root em) 
+ * root인 html의 폰트사이즈에 상대적인 em
+ */
+
+/* 박스 스타일 */
+div {
+	width: 60%;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid #9d97a8;
+	padding: 5%;
+	color: #ffffff;
+}
+
+.wrapper-parent {
+	font-size: 40px;
+	/* 1em == 14px 상속받음 */ 
+	font-size: 2.5em; /* 14px*2.5em=35px */
+	font-size: 2.5rem;
+	background-color: #7045cf;
+}
+
+.parent {
+	font-size: 30px;
+	/* 1em == 35px 상속받음 */
+	font-size: 1.88em; /* 35px*1.88em=65.8px */
+	font-size: 1.88rem;
+	background-color: #724fb7;
+}
+
+.child {
+	font-size: 20px;
+	/* 1em == 65.8px 상속받음 */
+	font-size: 1.25em; /* 65.8px*1.25em=82.25px */
+	font-size: 1.25rem;
+	background-color: #9077c4;
+}
+
+.inner-child {
+	font-size: 10px;
+	font-size: 0.63em;
+	font-size: 0.63rem;
+	background-color: #b0a6c4;
+}
+

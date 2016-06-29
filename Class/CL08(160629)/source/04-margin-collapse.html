@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta charset="UTF-8">
+		<title>부모 요소에 패딩, 보더 값이 없을때... 자식 요쇼의 마진 값은 어떻게 설정되나?</title>
+
+		<!-- 부모 요소에 패딩, 보더 값이 없으면 자식요소의 마진값이 부모 요소의 경계를 뛰처나와 부모요소의 마진이 10이고 자식요소의 마진이 20 이라면 10부분이 겹쳐짐, 패딩 보더값이 있으면 20+10이 됨 -->
+
+		<link rel="stylesheet" href="../../../Resource/reset.css">
+
+		<style>
+			.parent {
+				width: 500px;
+				margin-left: auto;
+				margin-right: auto;
+				background-color: #ffff00;
+			}
+
+			.parent:nth-last-of-type(1) {
+				margin-top: 20px;
+				border: 1px solid transparent;
+				background-color: #FF8040;
+			}
+
+			.child {
+				width: 300px;
+				margin-left: auto;
+				margin-right: auto;
+				padding-top: 2em;
+				padding-bottom: 2em;
+				background-color: #0000ff;
+				text-align: center;
+				color: #ffffff;
+			}
+
+			body > .parent:nth-last-of-type(1) > .child:only-child {
+				margin-top: 30px;
+
+				border-top-style: solid; /*solid dashed dotted double inset outset*/
+				border-top-width: 1px; /*두께설정*/
+				border-top-color: red;
+
+				background-color: #40A3FF;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="parent">
+			<div class="child">group1</div>
+		</div>
+
+		<div class="parent">
+			<div class="child">group2</div>
+		</div>
+
+	</body>
+</html>
