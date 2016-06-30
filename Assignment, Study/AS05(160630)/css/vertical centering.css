@@ -1,0 +1,48 @@
+html, body {
+	height: 100%;
+}
+
+.header, .footer {
+	height: 100px;
+	background-color: #96C8FF;
+}
+
+.content {
+	min-height: 100%;
+	margin-top: -100px;
+	margin-bottom: -100px;
+}
+
+.inner_content {
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	text-align: center;
+}
+
+.vertical_centering {
+	margin-top: 50px;
+}
+
+.centering_test {
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	line-height: 200px;
+	border: 5px solid;
+}
+
+.inline_content {
+	border-color: #9999FF;
+}
+.replaced_content {
+	border-color: #FF5050;
+}
+.table_cell {
+	border-color: #FFFF50;
+}
+
+.replaced_content>img, .table_cell>div .inline_blok>div{
+	vertical-align: middle;
+}
