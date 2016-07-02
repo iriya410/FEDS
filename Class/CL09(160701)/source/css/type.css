@@ -3,6 +3,62 @@ html {
 }
 
 body {
-	font-size: 0.875rem;
-	
+	font-size: 1rem;
+	line-height: 1.5rem; /* 1rem * 1.5 = 24px */
+
+	width: 80vmax;
+	margin-left: auto;
+	margin-right: auto;
+	/* 배경 이미지 삽입 */
+	background-image: url(../images/guide/leading-24px.png);
+}
+
+p {
+	margin-bottom: 1.5rem;
+}
+
+img {
+	vertical-align: bottom;
+}
+
+.small_caps {
+	font-variant: small-caps;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.lowercase {
+	text-transform: lowercase;
+}
+
+.capitalize {
+	text-transform: capitalize;
+}
+
+/*폰트 속기형*/
+/*font: size/line-height family; [필수]*/
+/*font: style weight size/line-height family; [선택]*/
+
+.spoqa {
+	font-family: "Spoqa Han Sans";
+
+	/* letter-spacing - photoshop의 -20은 -20/1000임 */
+	letter-spacing: -0.02rem; /*자간*/
+	word-spacing: ; /*어간*/
+}
+
+.bird {
+	overflow: hidden;
+	width: 24px;
+	height: 24px;
+	background-image: url("https://cdn2.iconfinder.com/data/icons/circle-icons-1/64/computer-128.png");
+	background-size: 24px 24px;
+	background-repeat: no-repeat;
+	text-indent: -9999rem;
+}
+
+.bird a {
+	display: block;
 }

@@ -1,0 +1,67 @@
+/* .parent_box {
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-bottom: 200px;
+	height: 200px;
+	border: 3px solid #649BFF;
+}
+
+.hidden {
+	overflow: hidden;
+}
+
+.scroll {
+	overflow: scroll;
+}
+
+.auto {
+	overflow: auto;
+}
+
+float는 자기 아래의 요소들에게만 영향을 줌
+.align-left {
+	float: left;
+	margin-right: 1rem;
+}
+
+.align-right {
+	float: right;
+	margin-left: 1rem;
+} */
+
+h1 {
+	font-size: 1.5rem;
+	color: #959595;
+	padding-bottom: 21px;
+}
+
+hr {
+	color: #E1E1E1;
+}
+
+.colors {
+	margin-top: 41px;
+}
+
+.box {
+	float: left;
+	margin-right: 28px;
+	margin-bottom: 30px;
+}
+
+.box img {
+	vertical-align: bottom;
+	margin-bottom: 11px;
+}
+
+.colors h2 {
+	font-size: 0.75rem;
+	line-height: 0.875rem;
+	letter-spacing: 0.075rem;
+	color: #2c2c2c;
+
+}
+
+.cont h2 {
+	visibility: hidden;
+}

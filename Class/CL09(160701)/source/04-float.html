@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta charset="UTF-8">
+		<title>CSS 넘쳐나는 흐름을 제어</title>
+		<link rel="stylesheet" href="../../../Resource/reset.css">
+		<link rel="stylesheet" href="../../../Resource/common.css">
+		<link rel="stylesheet" href="css/float.css">
+	</head>
+	<body>
+
+		<!-- <h2>oveflow visible</h2>
+		<div class="parent_box">
+			<div class="child">
+				<img class="align-left" src="http://placehold.it/400x200/eeeeee/000000/?text=text" alt="alt">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam molestias esse, numquam cupiditate id sit! Sequi dolor quae, nisi hic magnam veniam natus possimus animi ullam laudantium. Provident officiis vel, quidem quas quaerat perspiciatis est deleniti necessitatibus facilis animi aliquid. Quisquam quod beatae in optio, ipsam, voluptatem excepturi. Laborum aspernatur obcaecati molestias enim, animi totam! Minisma animi, amet dicta eaque, ullam ex deserunt iste perspiciatis nesciunt architecto maxime molestiae, excepturi illum quasi numquam, facere ipsum eum officiis. Placeat veritatis, aliquid eveniet illo error rem architecto nostrum temporibus, dicta perspiciatis possimus praesentium nesciunt quis quod asperiores quibusdam suscipit voluptates officiis explicabo. Tempore totam adipisci facere corrupti dolor, voluptate ipsa quasi, tempora nam fuga error architecto consequatur ipsam, commodi laudantium nobis accusamus incidunt recusandae beatae animi nemo, iste atque assumenda quod. Omnis dolores perspiciatis ut nesciunt totam tenetur deleniti! Laborum iure, minima tempora, obcaecati praesentium vero voluptates! Recusandae possimus, error rerum quae nulla iusto impedit earum eum id ad et aut architecto aliquam sit tenetur illum consectetur animi, ex quod pariatur? Sapiente laboriosam, nisi, quia ipsum quam nobis iusto. Quas laborum quod nobis ipsam nostrum mollitia obcaecati architecto sint, dolor facere modi, ratione quae. Repudiandae voluptatum, iure deleniti autem quam obcaecati doloremque.
+			</div>
+		</div>
+		
+		<h2>overflow hidden</h2>
+		<div class="parent_box hidden">
+			<div class="child">
+				<img class="align-right" src="http://placehold.it/400x200/eeeeee/000000/?text=text" alt="alt">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam molestias esse, numquam cupiditate id sit! Sequi dolor quae, nisi hic magnam veniam natus possimus animi ullam laudantium. Provident officiis vel, quidem quas quaerat perspiciatis est deleniti necessitatibus facilis animi aliquid. Quisquam quod beatae in optio, ipsam, voluptatem excepturi. Laborum aspernatur obcaecati molestias enim, animi totam! Minima animi, amet dicta eaque, ullam ex deserunt iste perspiciatis nesciunt architecto maxime molestiae, excepturi illum quasi numquam, facere ipsum eum officiis. Placeat veritatis, aliquid eveniet illo error rem architecto nostrum temporibus, dicta perspiciatis possimus praesentium nesciunt quis quod asperiores quibusdam suscipit voluptates officiis explicabo. Tempore totam adipisci facere corrupti dolor, voluptate ipsa quasi, tempora nam fuga error architecto consequatur ipsam, commodi laudantium nobis accusamus incidunt recusandae beatae animi nemo, iste atque assumenda quod. Omnis dolores perspiciatis ut nesciunt totam tenetur deleniti! Laborum iure, minima tempora, obcaecati praesentium vero voluptates! Recusandae possimus, error rerum quae nulla iusto impedit earum eum id ad et aut architecto aliquam sit tenetur illum consectetur animi, ex quod pariatur? Sapiente laboriosam, nisi, quia ipsum quam nobis iusto. Quas laborum quod nobis ipsam nostrum mollitia obcaecati architecto sint, dolor facere modi, ratione quae. Repudiandae voluptatum, iure deleniti autem quam obcaecati doloremque.
+			</div>
+		</div>
+		
+		<h2>overflow scroll</h2>
+		<div class="parent_box scroll">
+			<div class="child">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam molestias esse, numquam cupiditate id sit! Sequi dolor quae, nisi hic magnam veniam natus possimus animi ullam laudantium. Provident officiis vel, quidem quas quaerat perspiciatis est deleniti necessitatibus facilis animi aliquid. Quisquam quod beatae in optio, ipsam, voluptatem excepturi. Laborum aspernatur obcaecati molestias enim, animi totam! Minima animi, amet dicta eaque, ullam ex deserunt iste perspiciatis nesciunt architecto maxime molestiae, excepturi illum quasi numquam, facere ipsum eum officiis. Placeat veritatis, aliquid eveniet illo error rem architecto nostrum temporibus, dicta perspiciatis possimus praesentium nesciunt quis quod asperiores quibusdam suscipit voluptates officiis explicabo. Tempore totam adipisci facere corrupti dolor, voluptate ipsa quasi, tempora nam fuga error architecto consequatur ipsam, commodi laudantium nobis accusamus incidunt recusandae beatae animi nemo, iste atque assumenda quod. Omnis dolores perspiciatis ut nesciunt totam tenetur deleniti! Laborum iure, minima tempora, obcaecati praesentium vero voluptates! Recusandae possimus, error rerum quae nulla iusto impedit earum eum id ad et aut architecto aliquam sit tenetur illum consectetur animi, ex quod pariatur? Sapiente laboriosam, nisi, quia ipsum quam nobis iusto. Quas laborum quod nobis ipsam nostrum mollitia obcaecati architecto sint, dolor facere modi, ratione quae. Repudiandae voluptatum, iure deleniti autem quam obcaecati doloremque.
+			</div>
+		</div>
+
+		<h2>overflow auto</h2>
+		<div class="parent_box auto">
+			<div class="child">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam molestias esse, numquam cupiditate id sit! Sequi dolor quae, nisi hic magnam veniam natus possimus animi ullam laudantium. Provident officiis vel, quidem quas quaerat perspiciatis est deleniti necessitatibus facilis animi aliquid. Quisquam quod beatae in optio, ipsam, voluptatem excepturi. Laborum aspernatur obcaecati molestias enim, animi totam! Minima animi, amet dicta eaque, ullam ex deserunt iste perspiciatis nesciunt architecto maxime molestiae, excepturi illum quasi numquam, facere ipsum eum officiis. Placeat veritatis, aliquid eveniet illo error rem architecto nostrum temporibus, dicta perspiciatis possimus praesentium nesciunt quis quod asperiores quibusdam suscipit voluptates officiis explicabo. Tempore totam adipisci facere corrupti dolor, voluptate ipsa quasi, tempora nam fuga error architecto consequatur ipsam, commodi laudantium nobis accusamus incidunt recusandae beatae animi nemo, iste atque assumenda quod. Omnis dolores perspiciatis ut nesciunt totam tenetur deleniti! Laborum iure, minima tempora, obcaecati praesentium vero voluptates! Recusandae possimus, error rerum quae nulla iusto impedit earum eum id ad et aut architecto aliquam sit tenetur illum consectetur animi, ex quod pariatur? Sapiente laboriosam, nisi, quia ipsum quam nobis iusto. Quas laborum quod nobis ipsam nostrum mollitia obcaecati architecto sint, dolor facere modi, ratione quae. Repudiandae voluptatum, iure deleniti autem quam obcaecati doloremque.
+			</div>
+		</div> -->
+
+		<h1>COLOR</h1>
+
+		<hr>
+
+		<div class="colors">
+			<div class="box">
+				<img src="http://placehold.it/100x100/FCB409/ffffff/?text=FCB409" alt="FCB409">
+				<h2>WARNING</h2>
+			</div>
+			
+			<div class="box">
+				<img src="http://placehold.it/100x100/63A2FC/ffffff/?text=63A2FC" alt="63A2FC">
+				<h2>INFO</h2>
+			</div>
+			
+			<div class="box">
+				<img src="http://placehold.it/100x100/44CB83/ffffff/?text=44CB83" alt="44CB83">
+				<h2>SUCCESS</h2>
+			</div>
+			
+			<div class="box">
+				<img src="http://placehold.it/100x100/7171EF/ffffff/?text=7171EF" alt="7171EF">
+				<h2>PRIMARY</h2>
+			</div>
+			
+			<div class="box">
+				<img src="http://placehold.it/100x100/FF5448/ffffff/?text=FF5448" alt="FF5448">
+				<h2>DANGER</h2>
+			</div>
+			
+			<div class="box">
+				<img src="http://placehold.it/100x100/787F94/ffffff/?text=787F94" alt="787F94">
+				<h2>DEFAULT</h2>
+			</div>
+
+			<div class="box cont">
+				<img src="http://placehold.it/100x100/000000/000000/?text=" alt="alt">
+				<h2>000000</h2>
+			</div>
+
+			<div class="box cont">
+				<img src="http://placehold.it/100x100/586077/586077/?text=" alt="alt">
+				<h2>586077</h2>
+			</div>
+
+			<div class="box cont">
+				<img src="http://placehold.it/100x100/787F94/787F94/?text=" alt="alt">
+				<h2>787F94</h2>
+			</div>
+
+			<div class="box cont">
+				<img src="http://placehold.it/100x100/BAC2D0/BAC2D0/?text=" alt="alt">
+				<h2>BAC2D0</h2>
+			</div>
+
+			<div class="box cont">
+				<img src="http://placehold.it/100x100/D9E0E9/D9E0E9/?text=" alt="alt">
+				<h2>D9E0E9</h2>
+			</div>
+
+			<div class="box cont">
+				<img src="http://placehold.it/100x100/ffffff/ffffff/?text" alt="alt">
+				<h2>ffffff</h2>
+			</div>		
+		</div>
+
+	</body>
+</html>
