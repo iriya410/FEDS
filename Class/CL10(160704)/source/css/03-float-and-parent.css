@@ -1,0 +1,98 @@
+/* 방법 1 - 부모요소도 float을 설정한다 */
+.first {
+	float: left;
+}
+
+/* 방법 2 - 무의미하지만 표현을 위해 비어있는 div 요소를 마지막에 추가한다 */
+/* .clear */
+.second { 
+	clear: both;
+}
+
+/* 방법 3 - overflow: hidden을 사용 */
+.third {
+	overflow: hidden;
+}
+
+/* 방법 4 */
+/* clearfix::after */
+.fourth::after {
+	content: "pseudo element";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+}
+
+.new_clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.micro_clearfix::before, .micro_clearfix::after {
+	content: "";
+	display: table;
+}
+.micro_clearfix::after {
+	clear: both;
+}
+
+.parent {
+	width: 720px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 2rem;
+	background-color: #efefef;
+}
+
+.child {
+	float: left;
+	width: 140px;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	color: #ffffff;
+}
+
+.child:first-child {
+	background-color: #3c1323;
+}
+
+.child:nth-child(2) {
+	background-color: #1c4e36;
+	/*height: 140px;*/
+}
+
+.child:nth-child(3) {
+	background-color: #13143d;
+	/*float: none;*/
+}
+
+/*.wrapper {
+	float: left;
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #eeeeee;
+}
+
+.page_nav {
+	float: left;
+}
+
+.page_nav ul{
+	float: left;
+}
+
+.page_nav li {
+	float: left;
+}
+
+.page_nav a {
+	float: left;
+}
+
+.page_nav img {
+	float: left;
+}*/

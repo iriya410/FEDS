@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta charset="UTF-8">
+		<title>Parent Element in Floating Child Elements</title>
+		<link rel="stylesheet" href="../../../Resource/reset.css">
+		<link rel="stylesheet" href="../../../Resource/common.css">
+		<link rel="stylesheet" href="css/03-float-and-parent.css">
+	</head>
+	<body>
+		<!-- <div class="wrapper">
+			<nav class="page_nav">
+				<ul class="reset_list">
+					<li><a href=""><img src="http://placehold.it/50x50/000/fff/?text=text" alt="alt"></a></li>
+					<li><a href=""><img src="http://placehold.it/50x50/000/fff/?text=text" alt="alt"></a></li>
+					<li><a href=""><img src="http://placehold.it/50x50/000/fff/?text=text" alt="alt"></a></li>
+					<li><a href=""><img src="http://placehold.it/50x50/000/fff/?text=text" alt="alt"></a></li>
+				</ul>
+			</nav>
+		</div> -->
+
+		<div class="parent first">
+			<div class="child">Child Element 1</div>
+			<div class="child">Child Element 2</div>
+			<div class="child">Child Element 3</div>
+		</div>
+
+		<div class="parent">
+			<div class="child">Child Element 1</div>
+			<div class="child">Child Element 2</div>
+			<div class="child">Child Element 3</div>
+			<div class="second"></div>
+		</div>
+
+		<div class="parent third">
+			<div class="child">Child Element 1</div>
+			<div class="child">Child Element 2</div>
+			<div class="child">Child Element 3</div>
+		</div>
+
+		<div class="parent clearfix">
+			<div class="child">Child Element 1</div>
+			<div class="child">Child Element 2</div>
+			<div class="child">Child Element 3</div>
+		</div>
+	</body>
+</html>
