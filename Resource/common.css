@@ -5,3 +5,8 @@ ul.reset_list, ol.reset_list {
 	padding: 0;
 	list-style: none;
 }
+
+/* img 공백 제거 */
+img {
+	vertical-align: bottom;
+}

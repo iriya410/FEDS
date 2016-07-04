@@ -1,0 +1,45 @@
+/*
+ * Page 구조
+ * CSS float 레이아웃 디자인
+ * float을 적용한 요소에 width가 지정되어있지 않다면 내용 만큼의 width를 가진다
+ */
+
+/* 공통 모듈 디자인 */
+ [class*="page_"] {
+ 	height: 20vh;
+}
+
+ [class*="page_"]::before {
+	display: block;
+	content: attr(class);
+	text-align: center;
+	line-height: 20vh;
+	font-size: 2rem;
+	color: #ffffff;
+ }
+
+ /* 개별 모듈 디자인 */
+.page_header {
+	background-color: #50C8C8;
+}
+
+.page_navigation {
+	background-color: #A0F078;
+}
+
+.page_main {
+	background-color: #DCFF78;
+	float: left;
+	width: 60%;
+}
+
+.page_sidebar {
+	background-color: #DCA0DC;
+	float: left;
+	width: 40%;
+}
+
+.page_footer {
+	background-color: #FF7896;
+	clear: both;
+}
