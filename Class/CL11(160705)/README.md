@@ -31,7 +31,7 @@
 - Lists
 - Table
 
-![vertical-rhythm](../note/vertical-rhythm.jpg)
+![vertical-rhythm](note/vertical-rhythm.jpg)
 
 ```css
 body {
