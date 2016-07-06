@@ -3,7 +3,8 @@
 /* ----------------------------------------------------
 /* Basic Style */
 html {
-  overflow-y: visible;
+  /* 스크롤바 생성시 축이 달라지는 문제를 해결하기위해 처음부터 스크롤 바를 생성함 */
+  overflow-y: scroll;
   font-size: 10px;
 }
 body {
@@ -19,12 +20,14 @@ body {
 /*
 [참고] http://caniuse.com/#search=selection
 ::selection 지원: IE 9+
+가상 요소는 그룹핑이 안됨
 Firefox는 벤더 프리픽스를 사용해야 함.
 */
 ::selection {
   background: hsla(33, 9%, 55%, 0.25);
   color: #484848;
 }
+/* Firefox의 벤더 프리픽스 -moz- */
 ::-moz-selection {
   background: hsla(33, 9%, 55%, 0.25);
   color: #484848;
