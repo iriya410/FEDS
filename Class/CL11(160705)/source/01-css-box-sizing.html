@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta charset="UTF-8">
+		<title>CSS 박스모델 크기 설정</title>
+
+		<style>
+			body {
+				margin: 5% 15%;
+				font: 1rem/1.5 Verdana;
+				color: #494949;
+			}
+
+			[class$="_box"] {
+				width: 240px;
+				margin-bottom: 1rem;
+				padding-top: 0.45rem;
+				padding-bottom: 0.45rem;
+				outline: 1px dotted #484848;
+				text-align: center;
+				border: 5px solid #b9121b;
+				padding-left: 20px;
+			}
+
+			.content_box {
+				/* 박스 모델의 크기가 content까지 인식 */
+				box-sizing: content-box;
+				background-color: #f6e497;
+			}
+
+			.border_box {
+				/* 박스 모델의 크기를 border까지 인식 */
+				box-sizing: border-box;
+				background-color: #cab34e;
+			}
+
+			.container {
+				background-color: #eeeeee;
+			}
+
+			.row::after {
+				content: "";
+				display: block;
+				clear: both;
+			}
+
+			.col {
+				float: left;
+				width: 33.3333%;
+				text-align: center;
+				color: #ffffff;
+				box-sizing: border-box;
+			}
+
+			.col:nth-child(1) {
+				background-color: #8e2800;
+			}
+
+			.col:nth-child(2) {
+				background-color: #ca2704;
+			}
+
+			.col:nth-child(3) {
+				background-color: #fd5f32;
+				padding-left: 10%;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="content_box">
+			content_box
+		</div>
+
+		<div class="border_box">
+			border-box
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<dic class="col">column</dic>
+				<dic class="col">column</dic>
+				<dic class="col">column</dic>
+			</div>
+		</div>
+	</body>
+</html>

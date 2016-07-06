@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta charset="UTF-8">
+		<title>CSS Position Model</title>
+
+		<link rel="stylesheet" href="../../../Resource/reset.css">
+
+		<style>
+			[class*="box_"] {
+				width: 100px;
+				height: 100px;
+			}
+
+			[class*="rel"] {
+				position: relative;
+			}
+
+			[class*="ab"] {
+				position: absolute;
+			}
+
+			.box_rel_1 {
+				background-color: #FF898B;
+			}
+
+			.box_rel_2 {
+				background-color: #8D89FA;
+				left: 25px;
+				top: 25px;
+			}
+
+			.box_rel_3 {
+				background-color: #42FE64;
+				left: 25px;
+				top: 25px;
+			}
+
+			.box_ab_1 {
+				background-color: #FF898B;
+				right: 0px;
+				top: 0px;
+			}
+
+			.box_ab_2 {
+				background-color: #8D89FA;
+				right: 25px;
+				bottom: -25px;
+			}
+
+			.box_ab_3 {
+				background-color: #42FE64;
+				left: -50px;
+				top: 50px;
+			}
+
+		</style>
+	</head>
+	<body>
+		
+		<div class="box_rel_1">
+			<div class="box_rel_2">
+				<div class="box_rel_3">
+					
+				</div>
+			</div>
+		</div>
+
+		<div class="box_ab_1">
+			<div class="box_ab_2">
+			
+			</div>
+
+			<div class="box_ab_3">
+					
+			</div>
+		</div>
+		
+	</body>
+</html>
