@@ -10,6 +10,7 @@
 }
 
 /* 방법 3 - overflow: hidden을 사용 */
+/* 스크롤 바를 위한 계산 처리 도중 높이를 인식하는 것으로 생각됨 */
 .third {
 	overflow: hidden;
 }
@@ -95,4 +96,4 @@
 
 .page_nav img {
 	float: left;
-}*/
+}
