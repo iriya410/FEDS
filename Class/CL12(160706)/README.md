@@ -47,18 +47,6 @@
 
 -
 
-### CSS 타이포그래피 시스템 & 모듈러 스케일
-
-**모듈러 스케일** & **베이스라인** & **버티컬 리듬**이 반영된 타이포그래피 시스템
-
-![type-system-with-modular-scale](note/gridlover-free-type-system-with-modular-scale.jpg)
-
-Typography System 제작 결과물
-
-![typography-system](note/vertical-rhythm.gif)
-
--
-
 ##### 본문 디자인
 
 ```css
