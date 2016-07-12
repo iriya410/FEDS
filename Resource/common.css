@@ -25,6 +25,18 @@ img.image-overflow + * {
   overflow: hidden;
 }
 
+/* 이미지 비율 고정 */
+img.flex-img {
+  width: 100%;
+  height: auto;
+}
+
+
+img.horizontal-center-img {
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
 /* IR 배경이미지 기법 */
 .ir {
   display: block;
