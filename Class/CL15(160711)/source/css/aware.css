@@ -1,53 +1,69 @@
-.nav {
-	height: 80px;
-	background-color: #ff708e;
+a {
+	color: #000000;
+	text-decoration: none;
 }
 
-.slider_main, .testimonials, .about{
+button {
+	border: none;
+	background: none;
+}
+
+nav {
+	height: 80px;
+	line-height: 80px;
+}
+
+nav .nav_logo {
+	padding-left: 30px;
+}
+
+nav .logo {
+	margin-left: 30px;
+	position: relative;
+	top: -2px;
+}
+
+nav [class*="nav_menu_"] {
+	float: left;
+	cursor: pointer;
+}
+
+nav .nav_menu span {
+	width: 20px;
+	height: 20px;
+	margin-right: 20px;
+}
+
+nav .nav_button {
+	text-align: right;
+	padding-right: 30px;
+}
+
+nav [class*="nav_button_"] {
+	position: relative;
+	margin-left: 40px;
+}
+
+nav .nav_button_bag::after {
+	content: "3";
+	position: absolute;
+	top: -6px;
+	right: -5px;
+	border-radius: 50%;
+	background-color: #4800FF;
+	color: #ffffff;
+	width: 16px;
+	height: 16px;
+	line-height: 16px;
+	font-size: 12px;
+	text-align: center;
+}
+
+/**/
+.slider {
 	height: 480px;
 }
 
-.slider_main {
-	background-color: #51cacc;
-}
-
-.content {
-	height: 240px;
-}
-
-.brands .content {
-	height: 160px;
-}
-
-ul.slider_side li {
-	height: 120px;
-}
-
-ul {
+.slider ul {
 	list-style: none;
-	margin: 0;
-	padding: 0;
 }
-
-ul.slider_side li, .featured .content, .testimonials {
-	background-color: #9df871;
-}
-
-ul.slider_side li:nth-child(2n), .about,
-.featured .content:nth-child(2), .featured .content:nth-child(4),
-.featured .content:nth-child(5), .featured .content:nth-child(7) {
-	background-color: #e0ff77;
-}
-
-.banners .content, .blog .content, .brands .content {
-	background-color: #ff708e;
-}
-
-.banners .content:nth-child(2n), .blog .content:nth-child(2n), .brands .content:nth-child(2n) {
-	background-color: #de9dd6;
-}
-
-.blog .content:nth-child(n+4) {
-	height: 120px;
-}
-

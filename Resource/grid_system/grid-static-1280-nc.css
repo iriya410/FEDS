@@ -29,7 +29,7 @@
 	clear: both;
 }
 
-.row [class*="col_"] { float: left; }
+.row [class*="col_"] { position: relative; float: left; }
 
 .row .col_1 {width: 160px;}
 .row .col_2 {width: 320px;}
@@ -50,7 +50,7 @@
 .row .push_5 {left: 800px;}
 .row .push_6 {left: 960px;}
 .row .push_7 {left: 1120px;}
-.row .push_8 {right: 1280px;}
+.row .push_8 {left: 1280px;}
 
 .row .pull_1 {right: 160px;}
 .row .pull_2 {right: 320px;}

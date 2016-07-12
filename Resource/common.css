@@ -1,6 +1,6 @@
 /* img 하단 공백 제거 */
 img {
-	vertical-align: bottom;
+	vertical-align: middle;
 }
 
 /* 박스모델에 보더 설정시 레이아웃이 무너짐을 방지 */

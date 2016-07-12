@@ -30,7 +30,7 @@
 }
 
 .row [class*="col_"] { float: left; margin-right: 30px; }
-.row .last { margin-right: 0; }
+.row .last {margin-right: 0;}
 .row .col_1 {width: 130px;}
 .row .col_2 {width: 290px;}
 .row .col_3 {width: 450px;}
