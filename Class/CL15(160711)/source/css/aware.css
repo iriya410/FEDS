@@ -1,0 +1,53 @@
+.nav {
+	height: 80px;
+	background-color: #ff708e;
+}
+
+.slider_main, .testimonials, .about{
+	height: 480px;
+}
+
+.slider_main {
+	background-color: #51cacc;
+}
+
+.content {
+	height: 240px;
+}
+
+.brands .content {
+	height: 160px;
+}
+
+ul.slider_side li {
+	height: 120px;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul.slider_side li, .featured .content, .testimonials {
+	background-color: #9df871;
+}
+
+ul.slider_side li:nth-child(2n), .about,
+.featured .content:nth-child(2), .featured .content:nth-child(4),
+.featured .content:nth-child(5), .featured .content:nth-child(7) {
+	background-color: #e0ff77;
+}
+
+.banners .content, .blog .content, .brands .content {
+	background-color: #ff708e;
+}
+
+.banners .content:nth-child(2n), .blog .content:nth-child(2n), .brands .content:nth-child(2n) {
+	background-color: #de9dd6;
+}
+
+.blog .content:nth-child(n+4) {
+	height: 120px;
+}
+
