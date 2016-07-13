@@ -61,9 +61,52 @@ nav .nav_button_bag::after {
 
 /**/
 .slider {
-	height: 480px;
+	
 }
 
 .slider ul {
 	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.slider_main {
+	height: 480px;
+	background-image: url(../images/photo-slider-main.png);
+	background-size: 720px 480px;
+}
+
+.slider [class*="side_"] {
+	cursor: pointer;
+	position: relative;
+	height: 120px;
+}
+
+.slider [class*="side_"]:hover::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: linear-gradient( to right, hsla(256, 100%, 50%, 1.0) 10px, hsla(0, 0%, 100%, 0.5) 10px);
+	background-size: 240px 120px;
+}
+
+.slider .side_1 {
+	background-image: url(../images/photo-slider-slides-04.png);
+	background-size: 240px 120px;
+}
+
+.slider .side_2 {
+	background-image: url(../images/photo-slider-slides-03.png);
+	background-size: 240px 120px;
+}
+
+.slider .side_3 {
+	background-image: url(../images/photo-slider-slides-02.png);
+	background-size: 240px 120px;
+}
+
+.slider .side_4 {
+	background-image: url(../images/photo-slider-slides-01.png);
+	background-size: 240px 120px;
 }
