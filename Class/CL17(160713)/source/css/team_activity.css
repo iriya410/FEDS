@@ -1,0 +1,108 @@
+@charset "utf-8";
+
+body {
+	font-family:'BM HANNA', '배달의민족 한나', sans-serif;
+	background-color: #7d6fe0;
+	height: 1300px;
+}
+
+@keyframes back_circle {
+
+}
+
+.page {
+	position: relative;
+	left: 50%;
+	width: 710px;
+	transform: translateX(-50%);
+}
+
+.clip {
+	position: relative;
+	z-index: 1;
+	margin-left: 70px; 
+	width: 570px;
+	height: 200px;
+	box-sizing: border-box;
+	border-left: 1px solid #6c6c6c;
+	border-right: 1px solid #6c6c6c;
+}
+
+.clip_left {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	transform: translate(-50%, 50%);
+}
+
+.clip_right {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	transform: translate(50%, 50%);
+}
+
+
+.a4 {
+	position: relative;
+	padding: 20px 70px;
+	height: 1000px;
+	background-color: #ffffff;
+	box-shadow: -50px 0px 50px 0px rgba(0,0,0,0.5);
+
+}
+
+.paragraph {
+	text-align: justify;
+	/* 마지막 행의 좌우 정렬 */
+	text-align-last: justify;
+	overflow: hidden;
+}
+
+[class*="letter_"] {
+	font-size: 186px;
+	line-height: 224px;
+	font-weight: 700;
+}
+
+.ryu {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%); 
+}
+
+[class*="slide-from-"] {
+	position: relative;
+	background: hsla( 0, 0%, 0%, 0);
+}
+
+.slide-from-left {
+	animation: slide_left 1s linear 1;
+}
+
+.slide-from-right {
+	animation: slide_right 1s linear 1; 
+}
+
+
+@keyframes slide_left {
+	0% {
+		left: -100%;
+	}
+
+	100% {
+		left: 0;
+	}
+}
+
+@keyframes slide_right {
+	0% {
+		
+		right: -100%;
+	}	
+
+	100% {
+		right: 0;
+	}
+}
