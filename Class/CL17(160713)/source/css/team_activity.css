@@ -77,14 +77,16 @@ body {
 	background: hsla( 0, 0%, 0%, 0);
 }
 
+/*fill mode 설정 시 애니메이션이 끝나고 멈춤*/
 .slide-from-left {
-	animation: slide_left 1s linear 1;
+	left: -100%:;
+	animation: slide_left 1s linear 1 ;
 }
 
 .slide-from-right {
+	right: -100%;
 	animation: slide_right 1s linear 1; 
 }
-
 
 @keyframes slide_left {
 	0% {
