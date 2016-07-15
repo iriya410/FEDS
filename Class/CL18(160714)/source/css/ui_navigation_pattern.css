@@ -1,0 +1,155 @@
+a:focus {
+	outline: 3px solid #0094FF;
+}
+
+.main_page {
+	width: 100%;
+	min-height: 100vh;
+	background-image: url(../images/squarespace.jpg);
+	background-size: cover;
+}
+
+.squarespace_nav {
+	position: relative;
+	width: 100%;
+	padding: 40px 5vh;
+	padding-bottom: 0;
+}
+
+.squarespace_nav a {
+	display: inline-block;
+	color: #ffffff;
+	text-decoration: none;
+	height: 1.5rem;
+	line-height: 1.5rem;
+	font-size: 0.75rem;
+	vertical-align: middle;
+	margin-right: 5vw;
+}
+.squarespace_nav .logo {
+	margin-right: 5vw;
+}
+.squarespace_nav .logo svg {
+	width: auto;
+	height: 100%;
+}
+.squarespace_nav .menu {
+	position: relative;
+}
+.squarespace_nav .menu::after {
+	content: "";
+	border-bottom: 1px solid;
+	position: absolute;
+	left: 0;
+	right: 100%;
+	transition: all 0.6s;
+}
+.squarespace_nav .menu:hover::after {
+	right: 0;
+}
+
+
+.samsung_nav {
+	margin-top: 10vh;
+}
+
+.samsung_nav1 {
+	width: 100%;
+	height: 36px;
+	padding: 0 72px;
+	background-color: #ffffff;
+}
+
+.samsung_nav1 ul {
+	list-style: none;
+	float: right;
+}
+
+.samsung_nav1 li {
+	display: inline-block;
+	position: relative;
+	padding-left: 20px;
+}
+
+.samsung_nav1 a {
+	display: inline-block;
+	text-decoration: none;
+	font-size: 12px;
+	height: 36px;
+	line-height: 36px;
+	color: #000000;
+}
+
+.samsung_nav2 {
+	position: relative;
+	width: 100%;
+	height: 62px;
+	padding: 0 72px;
+	background-color: #3E4448;
+}
+
+.samsung_nav2 .logo {
+	display: inline-block;
+	width: 200px;
+	height: 62px;
+}
+
+.samsung_nav2 .logo img {
+	position: absolute;
+	top: 0;
+}
+
+.samsung_nav2 ul {
+	list-style: none;
+	float: right;
+}
+
+.samsung_nav2 li {
+	display: inline-block;
+	position: relative;
+	padding-left: 16px;
+	padding-right: 16px;
+}
+
+.samsung_nav2 .menu {
+	display: inline-block;
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 0.75rem;
+	height: 62px;
+	line-height: 62px;
+	letter-spacing: 1px;
+	border-bottom: 0px solid;
+	transition: all 0.4s;
+}
+
+.samsung_nav2 .menu:hover {
+	border-bottom: 3px solid;
+}
+
+/*
+.samsung_nav2 .menu::after {
+	content: "";
+	height: 2px;
+	background-color: #ffffff;
+	position: absolute;
+	bottom: -2px;
+	left: 15px;
+	right: 15px;
+	transition: all 0.4s;
+}
+
+.samsung_nav2 .menu:hover::after {
+	bottom: 0;
+}
+*/
+
+.samsung_nav2 .right_bar::after {
+	content: "";
+	width: 1px;
+	height: 22px;
+	background-color: #A0A0A0;
+	position: absolute;
+	top: 20px;
+	right: -3px;
+}

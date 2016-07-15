@@ -1,0 +1,150 @@
+* {
+	box-sizing: border-box;
+}
+
+#holzweiler_header {
+	position: absolute;
+	z-index: 10;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding-top: 40px;
+	padding-left: 75px;
+	padding-right: 75px;
+	text-align: center;
+}
+
+#logo {
+	display: inline-block;
+	width: 20vw;
+}
+
+#logo img {
+	display: inline-block;
+	vertical-align: middle;
+	width: 100%;
+	height: auto;
+}
+
+[class*="list_"], .under_list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.list_left {
+	float: left;
+}
+
+.list_right {
+	float: right;
+}
+
+[class*="list_"]>li {
+	height: 26px;
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+[class*="list_"]>li .under_list {
+	display: none;
+}
+
+[class*="list_"]>li:hover .under_list {
+	display: block;
+}
+
+[class*="list_"] li a, .under_list li a {
+	display: inline-block;
+	color: #ffffff;
+	border-bottom: 1px solid transparent;
+	text-decoration: none;
+	transition: all 0.6s;
+	overflow: hidden;
+}
+
+.under_list {
+	position: absolute;
+	top: 26px;
+	left: 0;
+	padding: 30px;
+	background-color: #231F20;
+	text-align: left;
+}
+
+[class*="list_"] li a:hover, .under_list li a:hover {
+	border-bottom-color: inherit;
+}
+
+.list_left li {
+	margin-right: 10px;
+}
+
+.list_right li {
+	margin-left: 10px;
+}
+
+.under_list li {
+	margin-left: 0;
+	margin-right: 10px;
+}
+
+.under_list li:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.list_right .bag {
+	color: rgba(255, 255, 255, 0.5);
+}
+
+#holzweiler_go_shop {
+}
+
+#holzweiler_go_shop a {
+	position: relative;
+	display: block;
+}
+
+#holzweiler_go_shop video {
+	width: 100%;
+}
+
+#holzweiler_go_shop .text {
+	color: #ffffff;
+	font-weight: 300;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#holzweiler_go_shop .text span {
+	display: block;
+	text-align: center;
+}
+
+#holzweiler_go_shop .text .main {
+	font-size: 6vw;
+	line-height: 6vw;
+	margin-bottom: 20px;
+}
+
+#holzweiler_go_shop .text .link {
+	position: relative;
+	font-size: 17px;
+	height: 27px;
+	line-height: 27px;
+}
+
+#holzweiler_go_shop .text .link::after {
+	content: "->";
+	display: inline-block;
+	position: relative;
+	right: -5px;
+	transition: right 0.4s;
+}
+
+#holzweiler_go_shop a:hover .link::after {
+	right: -10px;
+}
