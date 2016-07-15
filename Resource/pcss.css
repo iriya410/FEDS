@@ -7,6 +7,9 @@
 	border: 0.2rem solid;
 	border-radius: 50%;
 }
+[class*="arrow_button"]:hover, [class*="arrow_button"]:focus {
+	color: #1F4BA5;
+}
 [class*="arrow_button"]::after {
 	content: "";
 	display: inline-block;
@@ -46,6 +49,7 @@
 	border-radius: 50%;
 	animation: circle_progress 4s infinite;
 }
+
 @keyframes circle_progress {
 	0% {
 	border-top-color: transparent; transform: rotateZ(0deg); 

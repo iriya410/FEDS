@@ -31,7 +31,6 @@ img.flex-img {
   height: auto;
 }
 
-
 img.horizontal-center-img {
   margin-left: 50%;
   transform: translateX(-50%);
