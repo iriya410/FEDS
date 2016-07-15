@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta charset="UTF-8">
+		<title>CSS Sprite Animation DEMO</title>
+
+		<style>
+			body {
+				margin: 4.5rem;
+			}
+
+			.sprite-ani-demo {
+				border: 1px solid #999999;
+				width: 149px;
+				height: 120px;
+				background: url("images/Sprite-Image-demo.png") no-repeat;
+				animation: ziglezigle steps(6) 0.6s infinite;
+				background-size: 894px 120px;
+			}
+
+			@keyframes ziglezigle {
+				0% {
+					background-position-x: 0;
+				}
+
+				100% {
+					background-position-x: -894px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="sprite-ani-demo">
+			
+		</div>
+	</body>
+</html>
