@@ -6,7 +6,6 @@
 
 - HTML, CSS Style Guide
 
----
 
 # HTML
 
