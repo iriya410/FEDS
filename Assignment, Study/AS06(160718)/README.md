@@ -5,12 +5,11 @@
 ### 진행 내용
 
 - HTML, CSS Style Guide
-
 ---
 
 # HTML
 
-## 기본규칙
+### 기본규칙
 * 모든 HTML 문서는 W3C validation을 통과해야 한다.
 * DTD를 제외한 모든 요소와 애트리뷰트는 소문자로 작성한다
 * 애트리뷰트값은 큰따옴표(" ")로 묶는다.
@@ -24,22 +23,22 @@
 
 ##### DTD
 * HTML 문서를 작성할 때 HTML5를 사용한다.
-    ```html
-    <!doctype html>
-    ```
+```html
+	<!doctype html>
+```
 
 ##### 인코딩
 * HTML 문서를 작성할 떄 기본 인코딩은 utf-8을 원칙으로 한다.
-    ```html
-        <meta charset="utf-8">
-    ```
+```html
+	<meta charset="utf-8">
+```
 
 ##### 주석
 * HTML 주석의 시작과 종료는 아래와 같이 표기하며, 기본 형식에 맞게 작성한다.
-    ```html
+```html
     시작 주석 <!-- // 주석 내용 -->
     종료 주석 <!-- 주석 내용 // -->
-    ```
+```
 ## HTML 요소 작성 규칙
 #### 요소 속성 순서
 * 요소의 속성선언 순서는 다음과 같다.
@@ -53,17 +52,17 @@
 
 #### <html>
 * 다음과 같이 lang 애트리뷰트를 선언한다.
-    ```html
-        <html lang="ko-KR">
-    ```
+```html
+	<html lang="ko-KR">
+```
 
 #### <head>
 * meta, title, link, script, style 순서로 요소를 선언한다.
 
 * <title> : "페이지명 | 프로젝트명"의 형식으로 작성한다.
-    ```html
-    <title>페이지명 | 프로젝트명</title>
-    ```
+```html
+	<title>페이지명 | 프로젝트명</title>
+```
 
 * <link> : rel, type href 애트리뷰트를 선언한다.
     ```html
