@@ -19,8 +19,10 @@
 ##### 들여쓰기
 * 마크업의 중첩이 깊어질 때마다 자식 요소는 1탭 들여쓰고, 1탭의 크기는 공백 4칸으로 설정한다.
 
+
 ##### 빈줄
 * 의미 있는 객체를 구분하기 위하여 코드 그룹 간 1줄씩만 빈 줄을 넣는다.
+
 
 ##### DTD
 * HTML 문서를 작성할 때 HTML5를 사용한다.
@@ -28,11 +30,13 @@
 	<!doctype html>
 	```
 
+
 ##### 인코딩
 * HTML 문서를 작성할 떄 기본 인코딩은 utf-8을 원칙으로 한다.
 	```html
 	<meta charset="utf-8">
 	```
+
 
 ##### 주석
 * HTML 주석의 시작과 종료는 아래와 같이 표기하며, 기본 형식에 맞게 작성한다.
@@ -40,6 +44,7 @@
 	시작 주석 <!-- // 주석 내용 -->
 	종료 주석 <!-- 주석 내용 // -->
 	```
+
 
 ## HTML 요소 작성 규칙
 
@@ -53,31 +58,36 @@
 1. title, alt
 1. role, aria-*
 
+
 #### <html>
 * 다음과 같이 lang 애트리뷰트를 선언한다.
 	```html
 	<html lang="ko-KR">
 	```
 
+
 #### <head>
 * meta, title, link, script, style 순서로 요소를 선언한다.
 
-* title : "페이지명 | 프로젝트명"의 형식으로 작성한다.
-	```html
-	<title>페이지명 | 프로젝트명</title>
-	```
+	* title : "페이지명 | 프로젝트명"의 형식으로 작성한다.
+		```html
+		<title>페이지명 | 프로젝트명</title>
+		```
 
-* link : rel, type href 애트리뷰트를 선언한다.
-    ```html
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    ```
-    
-*  style
-    ```html
-    <style>
-    ...
-    </style>
-    ```
+
+	* link : rel, type href 애트리뷰트를 선언한다.
+	    ```html
+	    <link rel="stylesheet" type="text/css" href="css/style.css">
+	    ```
+
+
+	*  style
+	    ```html
+	    <style>
+	    ...
+	    </style>
+	    ```
+
 
 #### <form>
 *
@@ -89,9 +99,12 @@
         </fieldset>
     </form>
     ```
+
 * fieldset : <form> 요소의 자식 노드로 선언하여 폼 컨트롤 요소들을 그루핑하기 위해 선언한다.
 
+
 * legend : 폼 컨트롤 그룹인 <fieldset>의 자식 요소로서 폼 컨트롤 요소들의 그룹 이름을 표현하기 위해 선언한다.
+
 
 * input : <label> 요소, title 애트리뷰트, alt 애트리뷰트를 통해 접근성을 준수한다.
     ```html
@@ -103,20 +116,25 @@
 
 * select : 동일한 스타일의 셀렉트 박스이나 너비값이 다르면 선택적으로 style 애트리뷰트를 이용한다.
 
+
 * label : <input>(text, checkbox, radio, file, password), <select>, <textarea>와 같은 폼 요소는 for 애트리뷰트를 부여하여 해당 요소의 id값과 동일한 이름으로 연결한다.
     ```html
     <label for="user_id">아이디</label>
     <input type="text" id="user_id" name="user_id">
     ```
 
+
 * textarea : css를 정상적으로 불러오지 못하는 상황에서도 문제가 없도록 cols, rows의 값은 최소 30, 5 이상이 되도록 선언한다.
     ```html
     <textarea cols="30" rows="5"></textarea>
     ```
 
+
 * butto : type 애트리뷰트를 button으로 선언하여 UI를 제어한다. 폼 전송 역활을 하는 버튼은 submit 타입을 사용한다.
 
+
 #### <table>
+
 * table : 표의 요약 내용을 표기해야 할 때 summary 애트리뷰트를 선택적으로 사용할 수 있다.
 
 * caption : 표의 제목을 표현하기 위해 반드시 선언한다.
