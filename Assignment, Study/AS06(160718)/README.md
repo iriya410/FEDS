@@ -59,9 +59,9 @@
 #### <head>
 * meta, title, link, script, style 순서로 요소를 선언한다.
 
-* <title> : "페이지명 | 프로젝트명"의 형식으로 작성한다.
+* <title> - "페이지명 | 프로젝트명"의 형식으로 작성한다.
 ```html
-	<title>페이지명 | 프로젝트명</title>
+<title>페이지명 | 프로젝트명</title>
 ```
 
 * <link> : rel, type href 애트리뷰트를 선언한다.
