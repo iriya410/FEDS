@@ -31,6 +31,23 @@ img.flex-img {
   height: auto;
 }
 
+/* 배경 이미지에 적용되는 Fluid Image */
+/* 높이를 가늠할수 없기에 padding-bottom으로 높이를 인식시킴 */
+.flex-img-3-4{
+  width: 100%;
+  padding-bottom: 75%;
+  background-size: cover;
+  background-position: center center;
+}
+
+.flex-img-9-16{
+  width: 100%;
+  padding-bottom: 56.25%;
+  background-size: cover;
+  background-position: center center;
+}
+
+
 img.horizontal-center-img {
   margin-left: 50%;
   transform: translateX(-50%);
