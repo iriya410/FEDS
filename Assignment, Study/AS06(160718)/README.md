@@ -89,14 +89,14 @@
 
 
 #####  form
-    ```html
-    <form>
-        <fieldset>
-            <legend>...</legend>
-            ...
-        </fieldset>
-    </form>
-    ```
+```html
+<form>
+    <fieldset>
+        <legend>...</legend>
+        ...
+    </fieldset>
+</form>
+```
 
 - fieldset :  form 요소의 자식 노드로 선언하여 폼 컨트롤 요소들을 그루핑하기 위해 선언한다.
 
