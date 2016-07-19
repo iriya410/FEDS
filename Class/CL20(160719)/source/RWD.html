@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta charset="UTF-8">
+		<title>RWD &#124; Responsive Web Design</title>
+
+		<link rel="stylesheet" href="../../../Resource/common.css">
+		<link rel="stylesheet" href="../../../Resource/normalize.css">
+
+		<link rel="stylesheet" href="../../../Resource/grid_system/grid-flexable.css">
+
+		<link rel="stylesheet" href="css/rwd.css">
+
+		<style>
+			/* HI-DPI 이미지를 처리하기 위한 미디어 쿼리 */
+			@media
+				(-webkit-min-device-pixel-ratio: ${1:2}),
+				(min--moz-device-pixel-ratio: ${1:2}),
+				(min-resolution: ${1:2}dppx),
+				(min-resolution: 96*${1:2}dpi) {
+				
+			}
+
+			.container {
+				max-width: 1440px;
+				min-height: 100vh;
+				margin-left: auto;
+				margin-right: auto;
+				background-color: #eaeaea;
+			}
+
+			.container h2 {
+				margin-top: 0;
+			}
+
+			.rwd_video {
+				width: 100%;
+				height: auto;
+			}
+
+			iframe {
+				border: 0;
+			}
+
+			.rwd_media_container {
+				position: relative;
+				width: 100%;
+				height: 0;
+				padding-bottom: 56.25%;
+			}
+
+			.rwd_media {
+				position: absolute;
+				top: 0;
+				width: 100%;
+				height: 100%;
+			}
+
+		</style>
+	</head>
+	<body>
+
+		<!-- <div class="resposive_crop"></div> -->
+
+		<div class="container">
+			<h2>RWD Video</h2>
+			
+			<hr>
+
+			<h3>width: 100%; height: auto; max-width: 640px;</h3>
+
+			<video
+				class="rwd_video"
+				poster="media/Ghost_Assassin_VIP.png"
+				src="media/Ghost_Assassin_VIP.mp4"
+				style="max-width: 640px;"
+				controls>
+			</video>
+
+			<hr>
+
+			<h3>width: 100%; height: auto;</h3>
+
+			<video
+				class="rwd_video"
+				poster="media/Ghost_Assassin_VIP.png"
+				src="media/Ghost_Assassin_VIP.mp4"
+				controls>
+			</video>
+
+			<hr>
+
+			<h3>&lt;iframe&gt; youtube</h3>
+				
+			<div class="rwd_media_container">
+				<iframe
+					class="rwd_media"
+					width="640"
+					height="360"
+					src="https://www.youtube.com/embed/7Uo98AshR60?rel=0"
+					allowfullscreen>
+				</iframe>
+			</div>
+
+			<hr>
+
+			<h3>&lt;iframe&gt; vimeo</h3>
+
+			<div class="rwd_media_container">
+				<iframe
+					class="rwd_media"
+					src="https://player.vimeo.com/video/43580167"
+					width="640"
+					height="360"
+					allowfullscreen>
+				</iframe>
+			</div>
+		</div>
+
+	</body>
+</html>

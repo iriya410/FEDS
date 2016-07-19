@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+body {
+	margin: 0;
+}
+
+.resposive_crop {
+	width: 100%;
+	height: 100vh;
+	background-image: url("http://thefindmag.com/wp-content/uploads/Nujabes-Luvsic-Part-6-Grand-Finale-shing02.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+/* Fluid Grid */
+/* target : content = result */
+
+/* Flexible Image / Video */
+/* Content Image : width: 100%; height: auto; */
+/* Keep Scale Image : max-width: 100%;*/
+/* Background Image : width: 100%; padding-bottom: 이미지 비율값; */
+/* Crop Image : width: 100%; height: 고정값;*/
+/* Flexible Video */
+/* HTML5 <video> : Flexible Image와 방법이 유사 */
+/* youtube, vimeo : <iframe>를 감싸는 container가 필요 */
+/* 부모 container에 height: 0; padding-bottom: 영상 비율값 설정 */
+/* <iframe> 요소에 top: 0; width: 100%; height: 100%; 설정 */
+
+/* Media Queries / Breakpoint*/
+/* */
