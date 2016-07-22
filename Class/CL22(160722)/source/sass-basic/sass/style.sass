@@ -1,0 +1,97 @@
+// 부모 참조 선택자 &
+.page
+	.page-header
+		position: relative
+		height: 20vh
+	
+	.brand
+		overflow: hidden
+		position: absolute
+		left: 100%
+		
+		a
+			color: #fc414b
+			.ho-woo &:hover
+				color: #6b141c
+
+	// 부모까지의 주소를 가져오고 그 뒤에 -sample을 붙임
+	&-sample
+		a
+			color: #ffffff
+
+// 중첩 속성
+.page
+	margin:
+		top: 20px
+		right: 10px
+		bottom: 0px
+		left: auto
+
+	font: 1rem/1.5 "Spoqa Han Sans", sans-serif
+		weight: 600
+		style: oblique
+		variant: small-caps
+
+	border: 
+		top: 
+			color: red
+			style: solid
+			width: 2px
+		bottom:
+			color: transparent
+			style: solid
+			width: 2px
+		right:
+			color: hotpink
+			style: dashed
+			width: 2px
+
+// 미디어 쿼리 중첩
+aside.page-header
+	float: left
+	width: 100%
+	@media (min-width: 600px)
+		width: 45%
+	@media (min-width: 1100px)
+		width: 33.3333%
+
+// 선택자 상속
+$button-radius: 4px
+$button-align: center
+$button-gap: 0.6em
+$button-default-color: #eaeaea
+$button-primary-color: #e30d4f
+$button-secondary-color: #8200dc
+
+// % 는 SASS에서 쓰는 CSS의 추상 클래스
+%button
+	display: inline-block
+	padding: $button-gap 1em
+	background-color: $button-default-color
+	text-align: $button-align
+
+	&.primary
+		background: $button-primary-color
+			color: lighten($button-primary-color, 30%)
+
+	&.secondary
+		background: $button-secondary-color
+			color: lighten($button-secondary-color, 30%)
+
+	&.round
+		border-radius: $button-radius
+
+	&.rounder
+		border-radius: $button-radius * 2
+
+	&.roundist
+		border-radius: $button-radius * 4
+
+.button-error
+	@extend %button !optional
+	background: #ff0000
+	color: #ffffff
+	border: 3px solid darken(#ff0000, 40%)
+
+.button_2
+	@extend %button

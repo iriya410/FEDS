@@ -1,0 +1,96 @@
+.page .page-header {
+  position: relative;
+  height: 20vh;
+}
+
+.page .brand {
+  overflow: hidden;
+  position: absolute;
+  left: 100%;
+}
+
+.page .brand a {
+  color: #fc414b;
+}
+
+.ho-woo .page .brand a:hover {
+  color: #6b141c;
+}
+
+.page-sample a {
+  color: #ffffff;
+}
+
+.page {
+  margin-top: 20px;
+  margin-right: 10px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  font: 1rem/1.5 "Spoqa Han Sans", sans-serif;
+  font-weight: 600;
+  font-style: oblique;
+  font-variant: small-caps;
+  border-top-color: red;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-bottom-color: transparent;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-right-color: hotpink;
+  border-right-style: dashed;
+  border-right-width: 2px;
+}
+
+aside.page-header {
+  float: left;
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+  aside.page-header {
+    width: 45%;
+  }
+}
+
+@media (min-width: 1100px) {
+  aside.page-header {
+    width: 33.3333%;
+  }
+}
+
+.button-error, .button_2 {
+  display: inline-block;
+  padding: 0.6em 1em;
+  background-color: #eaeaea;
+  text-align: center;
+}
+
+.primary.button-error, .primary.button_2 {
+  background: #e30d4f;
+  background-color: #f990b1;
+}
+
+.secondary.button-error, .secondary.button_2 {
+  background: #8200dc;
+  background-color: #c776ff;
+}
+
+.round.button-error, .round.button_2 {
+  border-radius: 4px;
+}
+
+.rounder.button-error, .rounder.button_2 {
+  border-radius: 8px;
+}
+
+.roundist.button-error, .roundist.button_2 {
+  border-radius: 16px;
+}
+
+.button-error {
+  background: #ff0000;
+  color: #ffffff;
+  border: 3px solid #330000;
+}
+
+/*# sourceMappingURL=../map/style.css.map */

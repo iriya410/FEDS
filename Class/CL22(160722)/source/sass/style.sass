@@ -1,0 +1,13 @@
+@import _config.sass // sass는 확장자를 안써도 되지만 css는 써야됨 (헷갈리니까 걍 다 쓰는걸로)
+
+.container
+	width: 1200px
+	margin: 0 auto
+
+@import _header.sass
+@import _main.sass
+@import _footer.sass
+
+// powershell
+// node-sass --watch sass/ --output css/ --output-style expanded --source-map map/
+// 노드사스 와치옵션 사스파일폴더 아웃풋옵션 css폴더 아웃풋스타일 스타일옵션 소스맵 소스맵폴더 

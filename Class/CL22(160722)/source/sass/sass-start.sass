@@ -1,0 +1,36 @@
+$unit_width: 80px
+$unit_gutter: 10px
+$unit_height: 24px
+
+.container
+	width: 1200px
+	margin: 0 auto
+
+.header
+	width: ($unit_width * 12) + (($unit_gutter * 2) * (12 - 1))
+	height: $unit_height * 5
+	margin: 0 $unit_gutter
+	background-color: #B200FF
+
+.main
+	margin: $unit_height 0
+
+	.side
+		float: left
+		width: ($unit_width * 4) + (($unit_gutter * 2) * (4 - 1))
+		height: $unit_height * 28
+		margin: 0 $unit_gutter
+		background-color: #FF006E
+		
+	.content
+		float: left
+		width: ($unit_width * 8) + (($unit_gutter * 2) * (8 - 1))
+		height: $unit_height * 28
+		margin: 0 $unit_gutter
+		background-color: #00FFFF
+
+.footer
+	width: ($unit_width * 12) + (($unit_gutter * 2) * (12 - 1))
+	height: $unit_height * 4
+	margin: 0 $unit_gutter
+	background-color: #808080
