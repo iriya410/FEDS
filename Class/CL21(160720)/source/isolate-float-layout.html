@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta charset="UTF-8">
+		<title>격리된 플로팅 레이아웃</title>
+
+		<link rel="stylesheet" href="../../../Resource/normalize.css">
+		<link rel="stylesheet" href="../../../Resource/common.css">
+
+		<style>
+			.grid_container::after {
+				content: "";
+				position: absolute;
+				z-index: 100;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				min-height: 100vh;
+			}
+
+			.grid_container.show_grid::after {
+				 background: linear-gradient( to right, hsla(0, 50%, 50%, 0.4) 80%,  transparent 80%),
+				             linear-gradient( transparent 23px, hsla(102, 100%, 50%, 0.6) 23px); 
+				 background-size: 12.8% 1px,
+				                  1px 24px; 
+			}
+
+			.grid::after {
+				content: "";
+				display: block;
+				clear: both;
+			}
+
+			.box {
+				float: left;
+				width: calc(12.8%*0.80);
+				height: 48px;
+				text-align: center;
+				line-height: 48px;
+				background-color: #313131;
+				color: #ffffff;
+			}
+
+			.box-float {
+				margin-right: calc(12.8%*0.20);
+			}
+
+			[class*="box-isolate"] {
+				margin-right: -100%;
+			}
+
+			.box-isolate-order-1 { margin-left: calc(12.8%*0); }
+			.box-isolate-order-2 { margin-left: calc(12.8%*1); }
+			.box-isolate-order-3 { margin-left: calc(12.8%*2); }
+			.box-isolate-order-4 { margin-left: calc(12.8%*3); }
+
+			.grid {
+				margin-bottom: 24px;
+			}
+
+			.grid :nth-child(1) { background-color: #ffb03b; }
+			.grid :nth-child(2) { background-color: #34c3ff; }
+			.grid :nth-child(3) { background-color: #fc1f3d; }
+			.grid :nth-child(4) { background-color: #5dff2d; }
+		</style>
+	</head>
+	<body>
+		<div class="grid_container show_grid">
+			<div class="grid">
+				<div class="box box-float">1</div>
+				<div class="box box-float">2</div>
+				<div class="box box-float">3</div>
+				<div class="box box-float">4</div>
+			</div>
+
+			<div class="grid">
+				<div class="box box-isolate box-isolate-order-2">A</div>
+				<div class="box box-isolate box-isolate-order-3">B</div>
+				<div class="box box-isolate box-isolate-order-1">C</div>
+				<div class="box box-isolate box-isolate-order-4">D</div>
+			</div>
+		</div>
+	</body>
+</html>

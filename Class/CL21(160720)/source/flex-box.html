@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta charset="UTF-8">
+		<title>CSS3 Flexbox Layout</title>
+		<style>
+			.row {
+			  display: flex;
+			  flex: 0 1 auto;
+			  flex-direction: row;
+			  flex-wrap: wrap;
+			}
+			.col_1,
+			.col_2,
+			.col_3,
+			.col_4,
+			.col_5,
+			.col_6,
+			.col_7,
+			.col_8,
+			.col_9,
+			.col_10,
+			.col_11,
+			.col_12 {
+			  flex: 0 0 auto;
+			  height: 100px;
+			}
+
+			.col_1 {
+
+			  flex-basis: 8.333%;
+			  max-width: 8.333%;
+			}
+
+			.col_2 {
+			  flex-basis: 16.667%;
+			  max-width: 16.667%;
+			}
+
+			.col_3 {
+			  flex-basis: 25%;
+			  max-width: 25%;
+			}
+
+			.col_4 {
+			  flex-basis: 33.333%;
+			  max-width: 33.333%;
+			}
+
+			.col_5 {
+			  flex-basis: 41.667%;
+			  max-width: 41.667%;
+			}
+
+			.col_6 {
+			  flex-basis: 50%;
+			  max-width: 50%;
+			}
+
+			.col_7 {
+			  flex-basis: 58.333%;
+			  max-width: 58.333%;
+			}
+
+			.col_8 {
+			  flex-basis: 66.667%;
+			  max-width: 66.667%;
+			}
+
+			.col_9 {
+			  flex-basis: 75%;
+			  max-width: 75%;
+			}
+
+			.col_10 {
+			  flex-basis: 83.333%;
+			  max-width: 83.333%;
+			}
+
+			.col_11 {
+			  flex-basis: 91.667%;
+			  max-width: 91.667%;
+			}
+
+			.col_12 {
+			  flex-basis: 100%;
+			  max-width: 100%;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class="row">
+			<div class="col_6" style="background-color: #f3f;"></div>
+			<div class="col_2" style="background-color: #3f3;"></div>
+			<div class="col_2" style="background-color: #00f; height: 50px;"></div>
+		</div>
+	</body>
+</html>
