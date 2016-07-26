@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "../../css/script/media-quries.css",
+	"sources": [
+		"../../sass/script/media-quries.sass"
+	],
+	"mappings": "AAOA,AAAA,YAAY,CAAC;EACZ,KAAK,EAAE,IAAK;EACZ,KAAK,EAAE,IAAK;CAMc;;AAL1B,MAAM,EAAL,SAAS,EAAE,KAAK;EAHlB,AAAA,YAAY,CAAC;IAIX,KAAK,EAAE,GAAC;GAIiB;;;AAH1B,MAAM,EAAL,SAAS,EAAE,MAAM;EALnB,AAAA,YAAY,CAAC;IAMX,KAAK,EAAE,KAAC;GAEiB;;;AAD1B,MAAM,EAAL,SAAS,EAAE,MAAM;EAPnB,AAAA,YAAY,CAAC;IAQX,KAAK,EAAE,QAAC;GAAiB",
+	"names": []
+}

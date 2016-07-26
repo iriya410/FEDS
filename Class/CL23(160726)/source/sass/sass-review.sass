@@ -1,0 +1,31 @@
+$page_width: 1200px
+$columns: 12
+$column_width: $page_width / $columns
+
+.container
+	max-width: $page_width
+	margin:
+		left: auto
+		right: auto
+
+	.row
+		&::before, &::after
+			content: ""
+			display: table
+		&::after
+			clear: both
+
+// placeholder selector
+%col_module
+	float: left
+	padding:
+		left: 1rem
+		right: 1rem
+// @extend %col_module !optional - !optional은 에러가 생길 시 무시하고 컴파일 하지 않는다
+.col_1
+	@extend %col_module
+	width: $column_width
+	
+.col_2
+	@extend %col_module
+	width: $column_width * 2

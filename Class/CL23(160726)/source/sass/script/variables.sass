@@ -1,0 +1,35 @@
+// Sass 변수는 이름 앞에 $기호를 붙인다.
+// Sass 변수이름 작성 규칙
+// 변수 이름 사이에 공백을 사용하지 않는다
+// 변수 이름의 음절 사이에 _, - 를 사용한다
+// camelCase 방식을 사용할 수도 있지만 함수 이름에 사용되기 때문에 권장하지 않는다
+
+%center_pos
+	display: flex
+	justify-content: center
+	align-items: center
+
+%align_center_margin
+	margin:
+		left: auto
+		right: auto
+
+@function em($unit, $base: 16)
+	@return $unit / $base * 1em
+
+$container_width: 1260px
+$dark_grey: #3d3c31
+$bp_md: em(720)
+
+.container
+	@extend %align_center_margin
+	max-width: $container_width
+	min-height: ceil($container_width/2)
+
+.page_footer
+	@extend %align_center_margin
+	width: 100vh - 20vh
+	@media screen and (min-width: $bp_md)
+		width: 90%
+	background: $dark_grey
+	color: rgba(lighten($dark_grey, 40%), 0.45)
