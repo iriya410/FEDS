@@ -1,0 +1,36 @@
+// Variable
+@import _var.sass
+@import _mixins.sass
+
+// Web Font
+// #{인터폴레이션 보간법} : 문자를 접합
+@import url(https://fonts.googleapis.com/css?family=#{$font}#{$font_option})
+
+// Style
+header
+	@include box-sizing(border-box)
+
+body
+	@include box-sizing(content-box)
+	font: #{$base_font_size}/#{$base_line_height} $font
+	// font-size: $base_font_size
+	// font-family: $font
+	// line-height: $base_line_height
+
+footer
+	// default 값이 null이기 때문에 값이 들어오지 않음
+	@include size
+	// 뒷 인자인 $height만 지정
+	+size($height: 100vh)
+	+transition(all 0.4s)
+	
+	+content(1)
+		width: 100px
+
+nav
+	+content(1)
+	
+	width: 200px
+
+.test
+	+zenyatta(200px)

@@ -1,0 +1,51 @@
+@mixin box-sizing($value)
+	-webkit-box-sizing: $value
+	-moz-box-sizing: $value
+	box-sizing: $value
+
+@mixin size($width: null, $height: null)
+	width: $width
+	height: $height
+
+@mixin transition($properties...)
+	transition: $properties
+
+@mixin zenyatta($size: 100px, $color: black)
+	$invert_color: invert($color)
+	$small_circle: ceil($size / 2)
+	display: inline-block
+	position: relative
+	width: $size
+	height: $size/2
+	border:
+		color: $color
+		radius: 100%
+		style: solid
+		width: ($size * 0.02) ($size * 0.02) ($size / 2) ($size * 0.02)
+	background-color: $invert_color
+	&::before
+		content: ""
+		position: absolute
+		top: 50%
+		left: 0
+		box-sizing: border-box
+		border: ($small_circle * 0.40) solid $color
+			radius: 100%
+		background-color: $invert_color
+		width: $small_circle
+		height: $small_circle
+	&::after
+		content: ""
+		position: absolute
+		top: 50%
+		right: 0
+		box-sizing: border-box
+		border: ($small_circle * 0.40) solid $invert_color
+			radius: 100%
+		background-color: $color
+		width: $small_circle
+		height: $small_circle
+
+=content($var)
+	$variable: $var
+	@content
