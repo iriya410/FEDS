@@ -1,0 +1,81 @@
+// $base_font_size: 18px
+// $base_line_height: $base_font_size * 1.5
+// $page_width: 1280px
+// $column_count: 8
+// $unit_width: 130px
+// $gutter_width: 30px
+// $pattern_width: $unit_width + $gutter_width
+// $gutter_direction: after;
+// $avail_page_width: $page_widht - $gutter_width)
+
+// .grid_container
+// 	&::after
+// 		content: ""
+// 		position: absolute
+// 		top: 0
+// 		left: 0
+// 		z-index: 10
+// 		width: 1250px
+// 	&.show_grid::after
+// 		height: 100%
+// 		min-height: 100vh
+
+// @function draw_column_pattern($color, $alpha: 1.0)
+// 	$location: percentage($unit_width / $pattern_width)
+// 	@return linear-gradient(90 deg, rgba($color, $alpha) $location)
+// @function draw_line_pattern($color, $alpha: 1.0)
+// 	$location: $base_line_height - 1
+// 	@return linear-gradient(transparent $location, rgba($location, $alpha) $location)
+
+$i: 1
+$total: 12
+$unit_width: 80px
+$gutter: 20px
+$gutter_direction: null
+$fluid: true
+$page_width: $total * $unit_width + ($total - 1) * $gutter
+
+%cf::after
+	content ""
+	display: block
+	clear: both
+
+%col
+	@if $fluid
+		$gutter: percentage((1 / $total) * ($gutter / $unit_width))
+
+	$gutter_direction: split !default
+	float: left
+	@if $gutter_direction == split 
+		margin:
+			left: $gutter / 2
+			right: $gutter / 2
+	@if $gutter_direction == before
+		margint-left: $gutter
+	@if $gutter_direction == after
+		margin-right: $gutter
+	@if $gutter_direction == inside
+		padding:
+			left: $gutter / 2
+			right: $gutter / 2
+
+@function width($n)
+	$w: $unit_width * $n + $gutter * ($n - 1)
+	@if $fluid
+		$w: percentage($w / $page_width)
+	@return $w
+
+// @while $i <= $total
+// 	.grid
+// 		@extend %cf
+// 	.col_#{$i}
+// 		@extend %col
+// 			width: width($i)
+// 	$i: $i + 1
+
+@for $j from 1 through $total
+	.grid
+		@extend %cf
+	.col_#{$j}
+		@extend %col
+			width: width($j)

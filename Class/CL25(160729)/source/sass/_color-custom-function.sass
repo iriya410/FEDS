@@ -1,0 +1,34 @@
+@function removeUnit($unit)
+	@return $unit/($unit * 0 + 1)
+
+@function rem($px, $base_font_size: 16px)
+	@return ($px / $base_font_size) + 1rem
+
+
+@function _hsla($hex, $alpha)
+	$hue: floor(removeUnit(hue($hex)))
+	$saturation: floor(saturation($hex))
+	$lightness: floor(lightness($hex))
+	$result: "hsla(#{$hue}, #{$saturation}, #{$lightness}, #{$alpha})"
+	@return unquote($result)
+
+@mixin contrast_color($color, $compare_light: 50%, $amount: 20%)
+	$lightness: lightness($color) > $compare_light;
+	$bg_color: if($lightness, darken($color, $amount), lighten($color, $amount))
+	// @if $lightness == true
+	// 	$bg_color: darken($color, $amount)
+	// @else
+	// 	$bg_color: lighten($color, $amount)
+	color: $color
+	background-color: $bg-color
+
+$i: 1;
+$count: 24;
+
+@function width($n)
+	@return 130px * $n + 30px * ($n - 1)
+
+@while $i < $count
+	.gird .unit-#{$i}
+			width: width($i)
+	$i: $i+1
