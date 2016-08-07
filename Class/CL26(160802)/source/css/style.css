@@ -1,0 +1,12 @@
+body {
+  width: 940px;
+  margin: 4rem auto;
+}
+
+.page-footer {
+  margin-top: 1rem;
+}
+
+.page-footer address {
+  font-style: normal;
+}
