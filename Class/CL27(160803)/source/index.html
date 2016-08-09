@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta charset="UTF-8">
+		<title>DOM Script Basic</title>
+
+		<style>
+			#button-group {
+				display: flex;
+				flex-flow: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+			}
+
+			#button-group button {
+				flex: 1;
+				border: none;
+				padding: 1em;
+				background: #000000;
+				color: #ffffff;
+			}
+		</style>
+	</head>
+	<body>
+
+		<div id="button-group" role="group">
+			<button type="button">RED</button>
+			<button type="button">ORANGE</button>
+			<button type="button">YELLOW</button>
+			<button type="button">GREEN</button>
+			<button type="button">BLUE</button>
+			<button type="button">PURPLE</button>
+		</div>
+	
+		<script>
+			// 문서에서 단락 요소에 접근 한다.
+			// 유사배열 : NodeList or HTMLCollection
+			function getTagName(tag_name) {
+				return document.getElementsByTagName(tag_name);
+			}
+
+			function getId(id) {
+				return document.getElementById(id);
+			}
+
+			function log(msg) {
+				console.log(msg);
+			}
+
+			// var body = document.body;
+
+			// body.onmouseenter = function() {
+			// 	body.style.backgroundColor = "#ff0000";
+			// };
+			// body.onmouseleave = function() {
+			// 	body.style.backgroundColor = "";
+			// };
+			// function setBodyColor(color) {
+			// 	body.style.backgroundColor = color;
+			// }
+
+			var body = document.body;
+			var btn = getTagName("button");
+			
+			function changeBodyColor() {
+				body.style.backgroundColor = this.innerHTML;
+			}
+
+			for(var i=0; i<btn.length; i++) {
+				// btn[i].onclick = changeBodyColor;
+				btn[i].onmouseenter = changeBodyColor;
+			}
+
+			// btn[0].onclick =
+			// btn[1].onclick =
+			// btn[2].onclick =
+			// btn[3].onclick =
+			// btn[4].onclick = changeBodyColor;
+		</script>
+	</body>
+</html>
