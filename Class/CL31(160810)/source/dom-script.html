@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta charset="UTF-8">
+		<title>돔 스크립트</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<style>
+			.box {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				align-items: flex-end;
+				position: absolute;
+				width: 1280px;
+				height: 720px;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+
+			.select_box {
+				width: 200px;
+				height: 200px;
+				border: 2px solid #ffffff;
+				border-radius: 50%;
+				margin: 20px;
+			}
+
+			.select_box:hover {
+				cursor: pointer;
+			}
+
+			img {
+				position: absolute;
+				z-index: -1;
+				width: 100%;
+				height: auto;
+				background-color: #000000;
+			}
+
+			#btn_1 {
+				background: url(img/1.jpg) no-repeat;
+				background-size: cover;
+			}
+
+			#btn_2 {
+				background: url(img/2.jpg) no-repeat;
+				background-size: cover;
+			}
+
+			#btn_3 {
+				background: url(img/3.jpg) no-repeat;
+				background-size: cover;
+			}
+
+		</style>
+
+	</head>
+	<body>
+		<div class="box">
+			<img src="img/1.jpg">
+			<button id="btn_1" type="button" class="select_box"></button>
+			<button id="btn_2" type="button" class="select_box"></button>
+			<button id="btn_3" type="button" class="select_box"></button>
+		</div>
+
+		<script src="../../../../AssignmentPages/js_lib/manipulateNode.js"></script>
+		<script src="../../../../AssignmentPages/js_lib/querySelector.js"></script>
+		<script class="sc" src="js/dom-script.js"></script>
+	</body>
+</html>
