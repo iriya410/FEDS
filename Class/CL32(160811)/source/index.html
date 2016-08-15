@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta charset="UTF-8">
+		<title>title</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<style>
+			.btn_group {
+				display: flex;
+				flex-direction: row;
+				padding: 0;
+			}
+
+			.btn_group [class*="btn"] {
+				margin: 0 1rem;
+				padding: 0 1rem;
+				width: 3rem;
+				height: 2rem;
+			}
+
+			.page_header::after {
+				content: "";
+				display: flex;
+			}
+		</style>
+
+	</head>
+	<body>
+		<div class="btn_group" role="group">
+			<button type="button" class="btn_increase_text" aria-label="텍스트 크게">+</button>
+			<button type="button" class="btn_decrease_text" aria-label="텍스트 작게">-</button>
+		</div>
+
+		<header class="page_header">
+			<h1 class="brand">Brand Identity</h1>
+			<p class="brand_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+		</header>
+
+		<script src="../../../../AssignmentPages/js_lib/querySelector.js"></script>
+		<script src="../../../../AssignmentPages/js_lib/getStyle.js"></script>
+		<script src="../../../../AssignmentPages/js_lib/camelCase.js"></script>
+		<script src="js/control-text-size.js"></script>
+	</body>
+</html>
