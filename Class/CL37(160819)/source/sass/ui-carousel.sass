@@ -1,0 +1,71 @@
+@import _nomalize.scss
+
+@function shade($color, $amount)
+	@return mix($color, #000000, $amount)
+
+@function tint($color, $amount)
+	@return mix($color, #ffffff, $amount)
+
+%align-flex-center
+	display: flex
+	justify-content: center
+	align-items: center
+
+%reset-button
+	border: none
+	background-color: transparent
+
+$carousel-prefix: ui-carousel
+$content-width: 400px
+$content-height: 300px
+$content-bg: #0094FF
+$content-buttons-width: $content-width / 8
+
+body.demonstration
+	min-height: 100vh
+	@extend %align-flex-center
+
+.#{$carousel-prefix}
+	position: relative
+	border: 4px solid #bebebe
+	width: $content-width + $content-buttons-width
+	height: $content-height
+	overflow: auto
+	.js &
+		overflow: hidden
+
+.#{$carousel-prefix}--content__wrapper
+	display: flex
+	flex-direction: column
+	position: relative
+	left: 0
+	top: #{-$content-height}
+	transition: top 1s
+
+.#{$carousel-prefix}--content
+	@extend %align-flex-center
+	width: $content-width
+	height: $content-height
+	color: #ffffff
+	@for $i from 1 through 4
+		&:nth-child(#{$i})
+			background: shade($content-bg, $i*10%)
+
+.#{$carousel-prefix}--navigation__buttons
+	display: flex
+	flex-wrap: wrap
+	position: absolute
+	top: 0
+	right: 0
+	width: $content-buttons-width
+	height: $content-height
+	button
+		$button-color: #404040
+		@extend %reset-button !optional
+		width: 100%
+		cursor: pointer
+		background: $button-color
+		color: #ffffff
+		transition: background 0.5s
+		&:hover, &:focus
+			background: tint($button-color, 80%)
